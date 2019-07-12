@@ -1,0 +1,263 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 650  700  0    50   ~ 0
+CAN
+$Comp
+L HotSprings:MCP2515 U?
+U 1 1 5D287E4C
+P 1800 1900
+F 0 "U?" H 1800 2575 50  0000 C CNN
+F 1 "MCP2515" H 1800 2484 50  0000 C CNN
+F 2 "" H 1800 2450 50  0001 C CNN
+F 3 "" H 1800 2450 50  0001 C CNN
+	1    1800 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L HotSprings:MCP2551 U?
+U 1 1 5D28885C
+P 3150 1900
+F 0 "U?" H 3150 2275 50  0000 C CNN
+F 1 "MCP2551" H 3150 2184 50  0000 C CNN
+F 2 "" H 3150 2150 50  0001 C CNN
+F 3 "" H 3150 2150 50  0001 C CNN
+	1    3150 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 5D28E05A
+P 900 2200
+F 0 "Y1" H 900 2468 50  0000 C CNN
+F 1 "16MHz" H 900 2377 50  0000 C CNN
+F 2 "" H 900 2200 50  0001 C CNN
+F 3 "~" H 900 2200 50  0001 C CNN
+	1    900  2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5D28F2EA
+P 1300 900
+F 0 "C1" H 1415 946 50  0000 L CNN
+F 1 "10uf" H 1415 855 50  0000 L CNN
+F 2 "" H 1338 750 50  0001 C CNN
+F 3 "~" H 1300 900 50  0001 C CNN
+	1    1300 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5D28F77E
+P 1650 900
+F 0 "C2" H 1765 946 50  0000 L CNN
+F 1 "0.1uf" H 1765 855 50  0000 L CNN
+F 2 "" H 1688 750 50  0001 C CNN
+F 3 "~" H 1650 900 50  0001 C CNN
+	1    1650 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5D28FCAF
+P 2000 900
+F 0 "C3" H 2115 946 50  0000 L CNN
+F 1 "15pf" H 2115 855 50  0000 L CNN
+F 2 "" H 2038 750 50  0001 C CNN
+F 3 "~" H 2000 900 50  0001 C CNN
+	1    2000 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5D290167
+P 2300 900
+F 0 "C4" H 2415 946 50  0000 L CNN
+F 1 "15pf" H 2415 855 50  0000 L CNN
+F 2 "" H 2338 750 50  0001 C CNN
+F 3 "~" H 2300 900 50  0001 C CNN
+	1    2300 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5D291214
+P 2700 900
+F 0 "C5" H 2815 946 50  0000 L CNN
+F 1 "0.1uf" H 2815 855 50  0000 L CNN
+F 2 "" H 2738 750 50  0001 C CNN
+F 3 "~" H 2700 900 50  0001 C CNN
+	1    2700 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Network04_US RN1
+U 1 1 5D291A27
+P 1300 2900
+F 0 "RN1" H 1488 2946 50  0000 L CNN
+F 1 "10k" H 1488 2855 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP5" V 1575 2900 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 1300 2900 50  0001 C CNN
+	1    1300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5D29511A
+P 2400 2750
+F 0 "R1" H 2468 2796 50  0000 L CNN
+F 1 "10k" H 2468 2705 50  0000 L CNN
+F 2 "" V 2440 2740 50  0001 C CNN
+F 3 "~" H 2400 2750 50  0001 C CNN
+	1    2400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5D2954DB
+P 2700 2750
+F 0 "R2" H 2768 2796 50  0000 L CNN
+F 1 "1k" H 2768 2705 50  0000 L CNN
+F 2 "" V 2740 2740 50  0001 C CNN
+F 3 "~" H 2700 2750 50  0001 C CNN
+	1    2700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5D2958B4
+P 3000 2750
+F 0 "R3" H 3068 2796 50  0000 L CNN
+F 1 "33k" H 3068 2705 50  0000 L CNN
+F 2 "" V 3040 2740 50  0001 C CNN
+F 3 "~" H 3000 2750 50  0001 C CNN
+	1    3000 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 5D295BBD
+P 3350 2750
+F 0 "R4" H 3418 2796 50  0000 L CNN
+F 1 "120" H 3418 2705 50  0000 L CNN
+F 2 "" V 3390 2740 50  0001 C CNN
+F 3 "~" H 3350 2750 50  0001 C CNN
+	1    3350 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x07_Female SPI
+U 1 1 5D2DBD9F
+P 1350 3700
+F 0 "SPI" H 1378 3726 50  0000 L CNN
+F 1 "Conn_01x07_Female" H 1378 3635 50  0000 L CNN
+F 2 "" H 1350 3700 50  0001 C CNN
+F 3 "~" H 1350 3700 50  0001 C CNN
+	1    1350 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B2B-PH-K-S_LF__SN_ J?
+U 1 1 5D2E09B0
+P 4750 1300
+F 0 "J?" H 4928 1354 50  0000 L CNN
+F 1 "CAN" H 4928 1263 50  0000 L CNN
+F 2 "digikey-footprints:PinHeader_1x2_P2mm_Drill1mm" H 4950 1500 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 4950 1600 60  0001 L CNN
+F 4 "455-1704-ND" H 4950 1700 60  0001 L CNN "Digi-Key_PN"
+F 5 "B2B-PH-K-S(LF)(SN)" H 4950 1800 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 4950 1900 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 4950 2000 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 4950 2100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B2B-PH-K-S(LF)(SN)/455-1704-ND/926611" H 4950 2200 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 2POS 2MM" H 4950 2300 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 4950 2400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4950 2500 60  0001 L CNN "Status"
+	1    4750 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-XH-A_LF__SN_ J?
+U 1 1 5D2E158F
+P 4250 2200
+F 0 "J?" H 4628 2254 50  0000 L CNN
+F 1 "CAN1" H 4628 2163 50  0000 L CNN
+F 2 "digikey-footprints:PinHeader_1x4_P2.5mm_Drill1.1mm" H 4450 2400 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 4450 2500 60  0001 L CNN
+F 4 "455-2249-ND" H 4450 2600 60  0001 L CNN "Digi-Key_PN"
+F 5 "B4B-XH-A(LF)(SN)" H 4450 2700 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 4450 2800 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 4450 2900 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 4450 3000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B4B-XH-A(LF)(SN)/455-2249-ND/1651047" H 4450 3100 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 4POS 2.5MM" H 4450 3200 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 4450 3300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4450 3400 60  0001 L CNN "Status"
+	1    4250 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-XH-A_LF__SN_ J?
+U 1 1 5D2E1E88
+P 4250 2600
+F 0 "J?" H 4628 2654 50  0000 L CNN
+F 1 "CAN2" H 4628 2563 50  0000 L CNN
+F 2 "digikey-footprints:PinHeader_1x4_P2.5mm_Drill1.1mm" H 4450 2800 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 4450 2900 60  0001 L CNN
+F 4 "455-2249-ND" H 4450 3000 60  0001 L CNN "Digi-Key_PN"
+F 5 "B4B-XH-A(LF)(SN)" H 4450 3100 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 4450 3200 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 4450 3300 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 4450 3400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B4B-XH-A(LF)(SN)/455-2249-ND/1651047" H 4450 3500 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 4POS 2.5MM" H 4450 3600 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 4450 3700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4450 3800 60  0001 L CNN "Status"
+	1    4250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B2B-PH-K-S_LF__SN_ J?
+U 1 1 5D2E5886
+P 3950 1650
+F 0 "J?" H 4128 1704 50  0000 L CNN
+F 1 "JP1" H 4128 1613 50  0000 L CNN
+F 2 "digikey-footprints:PinHeader_1x2_P2mm_Drill1mm" H 4150 1850 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 4150 1950 60  0001 L CNN
+F 4 "455-1704-ND" H 4150 2050 60  0001 L CNN "Digi-Key_PN"
+F 5 "B2B-PH-K-S(LF)(SN)" H 4150 2150 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 4150 2250 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 4150 2350 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 4150 2450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B2B-PH-K-S(LF)(SN)/455-1704-ND/926611" H 4150 2550 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 2POS 2MM" H 4150 2650 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 4150 2750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4150 2850 60  0001 L CNN "Status"
+	1    3950 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5D2E62AE
+P 3100 3300
+F 0 "D1" H 3093 3516 50  0000 C CNN
+F 1 "LED" H 3093 3425 50  0000 C CNN
+F 2 "" H 3100 3300 50  0001 C CNN
+F 3 "~" H 3100 3300 50  0001 C CNN
+	1    3100 3300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
