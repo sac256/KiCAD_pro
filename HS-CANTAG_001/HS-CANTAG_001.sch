@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:HS-CANTAG_001-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -664,4 +665,8 @@ F 3 "" H 1000 1200 50  0001 C CNN
 	1    1000 1200
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	750  4400 5400 4400
+Wire Notes Line
+	5400 4400 5400 800 
 $EndSCHEMATC
