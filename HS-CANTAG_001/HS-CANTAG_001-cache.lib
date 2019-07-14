@@ -1,6 +1,29 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Connector_Jack-DC
+#
+DEF Connector_Jack-DC J 0 40 Y Y 1 F N
+F0 "J" 0 210 50 H V C CNN
+F1 "Connector_Jack-DC" 0 -200 50 H V C CNN
+F2 "" 50 -40 50 H I C CNN
+F3 "" 50 -40 50 H I C CNN
+ALIAS Jack-DC
+$FPLIST
+ BarrelJack*
+$ENDFPLIST
+DRAW
+A -130 100 25 901 -901 0 1 10 F -130 125 -130 75
+A -130 100 25 901 -901 0 1 10 N -130 125 -130 75
+S -200 150 200 -150 0 1 10 f
+S 145 125 -130 75 0 1 10 F
+P 2 0 1 10 200 100 150 100 N
+P 6 0 1 10 -150 -100 -100 -100 -50 -50 0 -100 100 -100 200 -100 N
+X ~ 1 300 100 100 L 50 50 1 1 P
+X ~ 2 300 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_C
 #
 DEF Device_C C 0 10 N Y 1 F N
@@ -137,6 +160,26 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Diode_SB160
+#
+DEF Diode_SB160 D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Diode_SB160" 0 -100 50 H V C CNN
+F2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" 0 -175 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS SB130 SB140 SB150 SB160 1N5817 1N5818 1N5819
+$FPLIST
+ D*DO?41*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+P 6 0 1 8 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # HotSprings_MCP2515
 #
 DEF HotSprings_MCP2515 U 0 20 Y Y 1 F N
@@ -186,6 +229,42 @@ X VREF 5 300 -150 100 L 50 50 1 1 I
 X CANL 6 300 -50 100 L 50 50 1 1 I
 X CANH 7 300 50 100 L 50 50 1 1 I
 X RS 8 300 150 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Regulator_Switching_R-78E5.0-0.5
+#
+DEF Regulator_Switching_R-78E5.0-0.5 U 0 10 Y Y 1 F N
+F0 "U" -150 125 50 H V C CNN
+F1 "Regulator_Switching_R-78E5.0-0.5" 0 125 50 H V L CNN
+F2 "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT" 50 -250 50 H I L CIN
+F3 "" 0 0 50 H I C CNN
+ALIAS R-78E3.3-0.5 R-78E9.0-0.5 R-78E12-0.5 R-78E15-0.5 R-78E5.0-1.0 R-78E3.3-1.0 R-78C1.8-1.0 R-78C5.0-1.0 R-78C3.3-1.0 R-78C9.0-1.0 R-78C12-1.0 R-78C15-1.0 R-781.8-1.0 R-782.5-1.0 R-783.3-1.0 R-785.0-1.0 R-781.5-0.5 R-781.8-0.5 R-782.5-0.5 R-783.3-0.5 R-785.0-0.5 R-786.5-0.5 R-7812-0.5 R-7815-0.5
+$FPLIST
+ Converter*DCDC*RECOM*R*78E*0.5*
+$ENDFPLIST
+DRAW
+S -200 75 200 -200 0 1 10 f
+X IN 1 -300 0 100 R 50 50 1 1 W
+X GND 2 0 -300 100 U 50 50 1 1 W
+X OUT 3 300 0 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_Push
+#
+DEF Switch_SW_Push SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_Push" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
@@ -240,37 +319,6 @@ X ~ 1 0 100 100 D 50 50 1 1 P
 X ~ 2 100 100 100 D 50 50 1 1 P
 X ~ 3 200 100 100 D 50 50 1 1 P
 X ~ 4 300 100 100 D 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# dk_Rectangular-Connectors-Headers-Male-Pins_B5B-XH-A_LF__SN_
-#
-DEF dk_Rectangular-Connectors-Headers-Male-Pins_B5B-XH-A_LF__SN_ J 0 40 Y Y 1 F N
-F0 "J" -100 -50 50 H V R CNN
-F1 "dk_Rectangular-Connectors-Headers-Male-Pins_B5B-XH-A_LF__SN_" 200 -150 50 H V C CNN
-F2 "digikey-footprints:PinHeader_1x5_P2.5mm_Drill1.1mm" 200 200 60 H I L CNN
-F3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" 200 300 60 H I L CNN
-F4 "455-2270-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "B5B-XH-A(LF)(SN)" 200 500 60 H I L CNN "MPN"
-F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
-F7 "Rectangular Connectors - Headers, Male Pins" 200 700 60 H I L CNN "Family"
-F8 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/jst-sales-america-inc/B5B-XH-A(LF)(SN)/455-2270-ND/1530483" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "CONN HEADER VERT 5POS 2.5MM" 200 1000 60 H I L CNN "Description"
-F11 "JST Sales America Inc." 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-S -50 0 450 -100 1 1 0 f
-S -10 -45 10 -65 1 1 0 F
-S 90 -45 110 -65 1 1 0 F
-S 190 -45 210 -65 1 1 0 F
-S 290 -45 310 -65 1 1 0 F
-S 390 -45 410 -65 1 1 0 F
-X ~ 1 0 100 100 D 50 50 1 1 P
-X ~ 2 100 100 100 D 50 50 1 1 P
-X ~ 3 200 100 100 D 50 50 1 1 P
-X ~ 4 300 100 100 D 50 50 1 1 P
-X ~ 5 400 100 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
