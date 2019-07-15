@@ -851,6 +851,36 @@ Wire Wire Line
 	2550 2450 2550 4100
 Wire Wire Line
 	2450 2650 2500 2650
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:640456-2 J6
+U 1 1 5D2E5892
+P 2000 2900
+F 0 "J6" V 1775 2908 50  0000 C CNN
+F 1 "640456-2" V 1866 2908 50  0000 C CNN
+F 2 "digikey-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm" H 2200 3100 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" H 2200 3200 60  0001 L CNN
+F 4 "A1921-ND" H 2200 3300 60  0001 L CNN "Digi-Key_PN"
+F 5 "640456-2" H 2200 3400 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 2200 3500 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 2200 3600 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" H 2200 3700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-amp-connectors/640456-2/A1921-ND/109003" H 2200 3800 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 2POS 2.54MM" H 2200 3900 60  0001 L CNN "Description"
+F 11 "TE Connectivity AMP Connectors" H 2200 4000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2200 4100 60  0001 L CNN "Status"
+	1    2000 2900
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	2500 2650 2500 3200
+	2100 2900 2500 2900
+Wire Wire Line
+	2500 2650 2500 2900
+Connection ~ 2500 2900
+Wire Wire Line
+	2500 2900 2500 3200
+Wire Wire Line
+	2100 3000 2200 3000
+Wire Wire Line
+	2200 3000 2200 3200
+Connection ~ 2200 3200
 $EndSCHEMATC
