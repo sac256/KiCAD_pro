@@ -1,0 +1,60 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HotSprings:AE-ATMEGA328-MINI U?
+U 1 1 5D500636
+P 2250 3350
+F 0 "U?" H 2250 4175 50  0000 C CNN
+F 1 "AE-ATMEGA328-MINI" H 2250 4084 50  0000 C CNN
+F 2 "" H 2250 4050 50  0001 C CNN
+F 3 "" H 2250 4050 50  0001 C CNN
+	1    2250 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L HotSprings:TWELITE_DIP U?
+U 1 1 5D50B865
+P 4550 4200
+F 0 "U?" H 4550 5025 50  0000 C CNN
+F 1 "TWELITE_DIP" H 4550 4934 50  0000 C CNN
+F 2 "" H 4550 4900 50  0001 C CNN
+F 3 "" H 4550 4900 50  0001 C CNN
+	1    4550 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L HotSprings:DFPLAYER_MINI U?
+U 1 1 5D50DC30
+P 4550 2150
+F 0 "U?" H 4550 2725 50  0000 C CNN
+F 1 "DFPLAYER_MINI" H 4550 2634 50  0000 C CNN
+F 2 "" H 4550 2600 50  0001 C CNN
+F 3 "" H 4550 2600 50  0001 C CNN
+	1    4550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 5D5183D6
+P 6300 1100
+F 0 "J?" H 6328 1076 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 6328 985 50  0000 L CNN
+F 2 "" H 6300 1100 50  0001 C CNN
+F 3 "~" H 6300 1100 50  0001 C CNN
+	1    6300 1100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
