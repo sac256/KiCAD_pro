@@ -1,3 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP AudioJack
+D Audio Jack
+K audio jack
+F ~
+$ENDCMP
+#
 #End Doc Library
