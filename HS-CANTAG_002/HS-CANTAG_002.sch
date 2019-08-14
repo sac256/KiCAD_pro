@@ -113,4 +113,37 @@ F 3 "~" H 5450 1600 50  0001 C CNN
 	1    5450 1600
 	1    0    0    -1  
 $EndComp
+$Comp
+L Regulator_Switching:R-783.3-0.5 U?
+U 1 1 5D53D8A6
+P 3500 1050
+F 0 "U?" H 3500 1292 50  0000 C CNN
+F 1 "R-783.3-0.5" H 3500 1201 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT" H 3550 800 50  0001 L CIN
+F 3 "https://www.recom-power.com/pdf/Innoline/R-78xx-0.5.pdf" H 3500 1050 50  0001 C CNN
+	1    3500 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D53E886
+P 2650 1300
+F 0 "C?" H 2765 1346 50  0000 L CNN
+F 1 "C" H 2765 1255 50  0000 L CNN
+F 2 "" H 2688 1150 50  0001 C CNN
+F 3 "~" H 2650 1300 50  0001 C CNN
+	1    2650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D53ED2A
+P 4150 1350
+F 0 "C?" H 4265 1396 50  0000 L CNN
+F 1 "C" H 4265 1305 50  0000 L CNN
+F 2 "" H 4188 1200 50  0001 C CNN
+F 3 "~" H 4150 1350 50  0001 C CNN
+	1    4150 1350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
