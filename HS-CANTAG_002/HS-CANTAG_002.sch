@@ -15,65 +15,65 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L HotSprings:AE-ATMEGA328-MINI U?
+L HotSprings:AE-ATMEGA328-MINI U1
 U 1 1 5D500636
 P 2350 1600
-F 0 "U?" H 2350 2425 50  0000 C CNN
+F 0 "U1" H 2350 2425 50  0000 C CNN
 F 1 "AE-ATMEGA328-MINI" H 2350 2334 50  0000 C CNN
-F 2 "" H 2350 2300 50  0001 C CNN
+F 2 "hotsprings-footprints:AE-ATMEGA328-MINI" H 2350 2300 50  0001 C CNN
 F 3 "" H 2350 2300 50  0001 C CNN
 	1    2350 1600
 	1    0    0    -1  
 $EndComp
 $Comp
-L HotSprings:TWELITE_DIP U?
+L HotSprings:TWELITE_DIP U4
 U 1 1 5D50B865
 P 4850 3050
-F 0 "U?" H 4850 3875 50  0000 C CNN
+F 0 "U4" H 4850 3875 50  0000 C CNN
 F 1 "TWELITE_DIP" H 4850 3784 50  0000 C CNN
-F 2 "" H 4850 3750 50  0001 C CNN
+F 2 "hotsprings-footprints:TWELITE-DIP" H 4850 3750 50  0001 C CNN
 F 3 "" H 4850 3750 50  0001 C CNN
 	1    4850 3050
 	1    0    0    -1  
 $EndComp
 $Comp
-L HotSprings:DFPLAYER_MINI U?
+L HotSprings:DFPLAYER_MINI U2
 U 1 1 5D50DC30
 P 2350 3050
-F 0 "U?" H 2350 3625 50  0000 C CNN
+F 0 "U2" H 2350 3625 50  0000 C CNN
 F 1 "DFPLAYER_MINI" H 2350 3534 50  0000 C CNN
-F 2 "" H 2350 3500 50  0001 C CNN
+F 2 "hotsprings-footprints:DFPlayer-MINI" H 2350 3500 50  0001 C CNN
 F 3 "" H 2350 3500 50  0001 C CNN
 	1    2350 3050
 	1    0    0    -1  
 $EndComp
 $Comp
-L HotSprings:AudioJack J?
+L HotSprings:AudioJack J3
 U 1 1 5D529C50
 P 2450 3950
-F 0 "J?" H 2680 3959 50  0000 L CNN
+F 0 "J3" H 2680 3959 50  0000 L CNN
 F 1 "AudioJack" H 2680 3868 50  0000 L CNN
-F 2 "" H 2400 3800 50  0001 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_Ledino_KB3SPRS_Horizontal" H 2400 3800 50  0001 C CNN
 F 3 "~" H 2400 3800 50  0001 C CNN
 	1    2450 3950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_DIP_x04 SW?
+L Switch:SW_DIP_x04 SW1
 U 1 1 5D52B398
 P 4050 1800
-F 0 "SW?" H 4050 2267 50  0000 C CNN
+F 0 "SW1" H 4050 2267 50  0000 C CNN
 F 1 "ID_DIP" H 4050 2176 50  0000 C CNN
-F 2 "" H 4050 1800 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx04_Slide_6.7x11.72mm_W7.62mm_P2.54mm_LowProfile" H 4050 1800 50  0001 C CNN
 F 3 "~" H 4050 1800 50  0001 C CNN
 	1    4050 1800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:R-783.3-0.5 U?
+L Regulator_Switching:R-783.3-0.5 U3
 U 1 1 5D53D8A6
 P 2550 4950
-F 0 "U?" H 2550 5192 50  0000 C CNN
+F 0 "U3" H 2550 5192 50  0000 C CNN
 F 1 "R-783.3-0.5" H 2550 5101 50  0000 C CNN
 F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT" H 2600 4700 50  0001 L CIN
 F 3 "https://www.recom-power.com/pdf/Innoline/R-78xx-0.5.pdf" H 2550 4950 50  0001 C CNN
@@ -81,133 +81,83 @@ F 3 "https://www.recom-power.com/pdf/Innoline/R-78xx-0.5.pdf" H 2550 4950 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
-U 1 1 5D53E886
-P 1950 5100
-F 0 "C?" H 2065 5146 50  0000 L CNN
-F 1 "0.1uF" H 2065 5055 50  0000 L CNN
-F 2 "" H 1988 4950 50  0001 C CNN
-F 3 "~" H 1950 5100 50  0001 C CNN
-	1    1950 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
+L Device:C C3
 U 1 1 5D53ED2A
 P 3000 5100
-F 0 "C?" H 3115 5146 50  0000 L CNN
+F 0 "C3" H 3115 5146 50  0000 L CNN
 F 1 "0.1uF" H 3115 5055 50  0000 L CNN
-F 2 "" H 3038 4950 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 3038 4950 50  0001 C CNN
 F 3 "~" H 3000 5100 50  0001 C CNN
 	1    3000 5100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper JP?
+L Device:Jumper JP2
 U 1 1 5D535F23
 P 4150 3350
-F 0 "JP?" H 4150 3614 50  0000 C CNN
+F 0 "JP2" H 4150 3614 50  0000 C CNN
 F 1 "PG_JP" H 4150 3523 50  0000 C CNN
-F 2 "" H 4150 3350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4150 3350 50  0001 C CNN
 F 3 "~" H 4150 3350 50  0001 C CNN
 	1    4150 3350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D1
 U 1 1 5D5373B8
 P 4750 4200
-F 0 "D?" H 4743 4416 50  0000 C CNN
+F 0 "D1" H 4743 4416 50  0000 C CNN
 F 1 "RX_LED" H 4743 4325 50  0000 C CNN
-F 2 "" H 4750 4200 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 4750 4200 50  0001 C CNN
 F 3 "~" H 4750 4200 50  0001 C CNN
 	1    4750 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D3
 U 1 1 5D53790B
 P 4750 5000
-F 0 "D?" H 4743 5216 50  0000 C CNN
+F 0 "D3" H 4743 5216 50  0000 C CNN
 F 1 "5V_LED" H 4743 5125 50  0000 C CNN
-F 2 "" H 4750 5000 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 4750 5000 50  0001 C CNN
 F 3 "~" H 4750 5000 50  0001 C CNN
 	1    4750 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C1
 U 1 1 5D54E676
 P 1450 5100
-F 0 "C?" H 1565 5146 50  0000 L CNN
+F 0 "C1" H 1565 5146 50  0000 L CNN
 F 1 "100uF" H 1565 5055 50  0000 L CNN
-F 2 "" H 1488 4950 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1488 4950 50  0001 C CNN
 F 3 "~" H 1450 5100 50  0001 C CNN
 	1    1450 5100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
-U 1 1 5D54E963
-P 3450 5100
-F 0 "C?" H 3565 5146 50  0000 L CNN
-F 1 "100uF" H 3565 5055 50  0000 L CNN
-F 2 "" H 3488 4950 50  0001 C CNN
-F 3 "~" H 3450 5100 50  0001 C CNN
-	1    3450 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Speaker LS?
+L Device:Speaker LS1
 U 1 1 5D55050E
 P 1300 3950
-F 0 "LS?" H 1470 3946 50  0000 L CNN
+F 0 "LS1" H 1470 3946 50  0000 L CNN
 F 1 "Speaker" H 1470 3855 50  0000 L CNN
-F 2 "" H 1300 3750 50  0001 C CNN
+F 2 "digikey-footprints:PinHeader_1x2_P2.5mm_Drill1.1mm" H 1300 3750 50  0001 C CNN
 F 3 "~" H 1290 3900 50  0001 C CNN
 	1    1300 3950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1300 4950 1450 4950
-Wire Wire Line
-	1450 4950 1950 4950
-Connection ~ 1450 4950
-Wire Wire Line
-	2250 4950 1950 4950
-Wire Wire Line
-	1450 4950 1450 5250
-Connection ~ 1950 4950
-Wire Wire Line
-	1950 5250 2550 5250
-Wire Wire Line
-	1950 5250 1450 5250
-Connection ~ 1950 5250
-Connection ~ 1450 5250
-Wire Wire Line
-	1300 5250 1450 5250
-Wire Wire Line
 	2550 5250 3000 5250
 Connection ~ 2550 5250
 Connection ~ 3000 5250
 Wire Wire Line
-	3000 5250 3450 5250
-Wire Wire Line
 	2850 4950 3000 4950
 Connection ~ 3000 4950
-Wire Wire Line
-	3000 4950 3450 4950
-Connection ~ 3450 4950
-Wire Wire Line
-	3450 4950 3700 4950
-Wire Wire Line
-	3450 5250 3700 5250
-Connection ~ 3450 5250
 $Comp
-L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-XH-A_LF__SN_ J?
+L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-XH-A_LF__SN_ J2
 U 1 1 5D583632
 P 900 1600
-F 0 "J?" V 675 1608 50  0000 C CNN
+F 0 "J2" V 675 1608 50  0000 C CNN
 F 1 "CAN_SPI" V 766 1608 50  0000 C CNN
 F 2 "digikey-footprints:PinHeader_1x4_P2.5mm_Drill1.1mm" H 1100 1800 60  0001 L CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 1100 1900 60  0001 L CNN
@@ -224,10 +174,10 @@ F 12 "Active" H 1100 2800 60  0001 L CNN "Status"
 	0    1    1    0   
 $EndComp
 $Comp
-L dk_Rectangular-Connectors-Headers-Male-Pins:B2B-XH-A_LF__SN_ J?
+L dk_Rectangular-Connectors-Headers-Male-Pins:B2B-XH-A_LF__SN_ J1
 U 1 1 5D586AB0
 P 900 1050
-F 0 "J?" V 675 1058 50  0000 C CNN
+F 0 "J1" V 675 1058 50  0000 C CNN
 F 1 "5v_GND" V 766 1058 50  0000 C CNN
 F 2 "digikey-footprints:PinHeader_1x2_P2.5mm_Drill1.1mm" H 1100 1250 60  0001 L CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 1100 1350 60  0001 L CNN
@@ -244,10 +194,10 @@ F 12 "Active" H 1100 2250 60  0001 L CNN "Status"
 	0    1    1    0   
 $EndComp
 $Comp
-L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-XH-A_LF__SN_ J?
+L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-XH-A_LF__SN_ J5
 U 1 1 5D587E4A
 P 5100 1550
-F 0 "J?" V 5291 1422 50  0000 R CNN
+F 0 "J5" V 5291 1422 50  0000 R CNN
 F 1 "Serial_5v" V 5200 1422 50  0000 R CNN
 F 2 "digikey-footprints:PinHeader_1x4_P2.5mm_Drill1.1mm" H 5300 1750 60  0001 L CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 5300 1850 60  0001 L CNN
@@ -264,10 +214,10 @@ F 12 "Active" H 5300 2750 60  0001 L CNN "Status"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L dk_Rectangular-Connectors-Headers-Male-Pins:B2B-XH-A_LF__SN_ J?
+L dk_Rectangular-Connectors-Headers-Male-Pins:B2B-XH-A_LF__SN_ J4
 U 1 1 5D58893C
 P 5100 1100
-F 0 "J?" V 5191 972 50  0000 R CNN
+F 0 "J4" V 5191 972 50  0000 R CNN
 F 1 "Debug_Serial" V 5100 972 50  0000 R CNN
 F 2 "digikey-footprints:PinHeader_1x2_P2.5mm_Drill1.1mm" H 5300 1300 60  0001 L CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 5300 1400 60  0001 L CNN
@@ -284,10 +234,10 @@ F 12 "Active" H 5300 2300 60  0001 L CNN "Status"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-XH-A_LF__SN_ J?
+L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-XH-A_LF__SN_ J6
 U 1 1 5D589362
 P 5100 2000
-F 0 "J?" V 5291 1872 50  0000 R CNN
+F 0 "J6" V 5291 1872 50  0000 R CNN
 F 1 "i2c_3.3v" V 5200 1872 50  0000 R CNN
 F 2 "digikey-footprints:PinHeader_1x4_P2.5mm_Drill1.1mm" H 5300 2200 60  0001 L CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 5300 2300 60  0001 L CNN
@@ -366,10 +316,10 @@ SI
 Text GLabel 1750 2000 0    50   Input ~ 0
 CS
 $Comp
-L Device:R_Network04_US RN?
+L Device:R_Network04_US RN1
 U 1 1 5D5B496D
 P 3550 1300
-F 0 "RN?" H 3738 1346 50  0000 L CNN
+F 0 "RN1" H 3738 1346 50  0000 L CNN
 F 1 "R_A" H 3738 1255 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP5" V 3825 1300 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 3550 1300 50  0001 C CNN
@@ -503,78 +453,78 @@ Wire Wire Line
 Wire Wire Line
 	1500 4000 1500 3950
 $Comp
-L Device:LED D?
+L Device:LED D2
 U 1 1 5D607FA8
 P 4750 4600
-F 0 "D?" H 4743 4816 50  0000 C CNN
+F 0 "D2" H 4743 4816 50  0000 C CNN
 F 1 "TX_LED" H 4743 4725 50  0000 C CNN
-F 2 "" H 4750 4600 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 4750 4600 50  0001 C CNN
 F 3 "~" H 4750 4600 50  0001 C CNN
 	1    4750 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R3
 U 1 1 5D6120D8
 P 4450 4200
-F 0 "R?" H 4518 4246 50  0000 L CNN
+F 0 "R3" H 4518 4246 50  0000 L CNN
 F 1 "1k" H 4518 4155 50  0000 L CNN
-F 2 "" V 4490 4190 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4490 4190 50  0001 C CNN
 F 3 "~" H 4450 4200 50  0001 C CNN
 	1    4450 4200
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R5
 U 1 1 5D612E20
 P 4450 5000
-F 0 "R?" H 4518 5046 50  0000 L CNN
+F 0 "R5" H 4518 5046 50  0000 L CNN
 F 1 "1k" H 4518 4955 50  0000 L CNN
-F 2 "" V 4490 4990 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4490 4990 50  0001 C CNN
 F 3 "~" H 4450 5000 50  0001 C CNN
 	1    4450 5000
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R4
 U 1 1 5D613217
 P 4450 4600
-F 0 "R?" H 4518 4646 50  0000 L CNN
+F 0 "R4" H 4518 4646 50  0000 L CNN
 F 1 "1k" H 4518 4555 50  0000 L CNN
-F 2 "" V 4490 4590 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4490 4590 50  0001 C CNN
 F 3 "~" H 4450 4600 50  0001 C CNN
 	1    4450 4600
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R2
 U 1 1 5D613CE9
 P 4300 2650
-F 0 "R?" H 4368 2696 50  0000 L CNN
+F 0 "R2" H 4368 2696 50  0000 L CNN
 F 1 "1k" H 4368 2605 50  0000 L CNN
-F 2 "" V 4340 2640 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4340 2640 50  0001 C CNN
 F 3 "~" H 4300 2650 50  0001 C CNN
 	1    4300 2650
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R1
 U 1 1 5D613DA9
 P 1450 2650
-F 0 "R?" H 1518 2696 50  0000 L CNN
+F 0 "R1" H 1518 2696 50  0000 L CNN
 F 1 "1k" H 1518 2605 50  0000 L CNN
-F 2 "" V 1490 2640 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1490 2640 50  0001 C CNN
 F 3 "~" H 1450 2650 50  0001 C CNN
 	1    1450 2650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper JP?
+L Device:Jumper JP1
 U 1 1 5D5C19FF
 P 3850 2650
-F 0 "JP?" H 3850 2914 50  0000 C CNN
+F 0 "JP1" H 3850 2914 50  0000 C CNN
 F 1 "Jumper" H 3850 2823 50  0000 C CNN
-F 2 "" H 3850 2650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3850 2650 50  0001 C CNN
 F 3 "~" H 3850 2650 50  0001 C CNN
 	1    3850 2650
 	1    0    0    -1  
@@ -597,4 +547,58 @@ Text GLabel 4900 4600 2    50   Input ~ 0
 TX_H
 Text GLabel 4900 5000 2    50   Input ~ 0
 +5V
+Text GLabel 2950 1300 2    50   Input ~ 0
+GND
+Text GLabel 2950 1400 2    50   Input ~ 0
+GND
+Text GLabel 2950 1100 2    50   Input ~ 0
++5V
+Connection ~ 1950 4950
+Wire Wire Line
+	2250 4950 1950 4950
+Wire Wire Line
+	1300 4950 1450 4950
+Connection ~ 1950 5250
+Wire Wire Line
+	1950 5250 2550 5250
+Wire Wire Line
+	1300 5250 1450 5250
+$Comp
+L Device:C C2
+U 1 1 5D53E886
+P 1950 5100
+F 0 "C2" H 2065 5146 50  0000 L CNN
+F 1 "0.1uF" H 2065 5055 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 1988 4950 50  0001 C CNN
+F 3 "~" H 1950 5100 50  0001 C CNN
+	1    1950 5100
+	1    0    0    -1  
+$EndComp
+Connection ~ 1450 4950
+Connection ~ 1450 5250
+Wire Wire Line
+	1450 4950 1950 4950
+Wire Wire Line
+	1450 5250 1950 5250
+Connection ~ 3450 5250
+Connection ~ 3450 4950
+Wire Wire Line
+	3450 4950 3700 4950
+Wire Wire Line
+	3000 4950 3450 4950
+Wire Wire Line
+	3450 5250 3700 5250
+Wire Wire Line
+	3000 5250 3450 5250
+$Comp
+L Device:C C4
+U 1 1 5D54E963
+P 3450 5100
+F 0 "C4" H 3565 5146 50  0000 L CNN
+F 1 "100uF" H 3565 5055 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 3488 4950 50  0001 C CNN
+F 3 "~" H 3450 5100 50  0001 C CNN
+	1    3450 5100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
