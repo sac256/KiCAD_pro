@@ -431,27 +431,15 @@ Wire Wire Line
 Wire Wire Line
 	1850 3000 1600 3000
 Wire Wire Line
-	1600 3000 1600 4100
-Wire Wire Line
-	1600 4100 2200 4100
-Wire Wire Line
-	2050 4200 2200 4200
-Text GLabel 2050 4200 0    50   Input ~ 0
-GND
-Wire Wire Line
 	1850 3100 1700 3100
 Wire Wire Line
 	1700 3100 1700 3900
 Wire Wire Line
 	1700 3900 2200 3900
 Wire Wire Line
-	2200 3800 1500 3800
+	2200 3800 1650 3800
 Wire Wire Line
 	1500 3800 1500 3850
-Wire Wire Line
-	2200 4000 1500 4000
-Wire Wire Line
-	1500 4000 1500 3950
 $Comp
 L Device:LED D2
 U 1 1 5D607FA8
@@ -601,4 +589,26 @@ F 3 "~" H 3450 5100 50  0001 C CNN
 	1    3450 5100
 	1    0    0    -1  
 $EndComp
+Text GLabel 1800 4300 3    50   Input ~ 0
+GND
+Wire Wire Line
+	1600 3000 1600 4100
+Wire Wire Line
+	1600 4100 2200 4100
+Wire Wire Line
+	1800 4200 1800 4300
+Wire Wire Line
+	1800 4200 2200 4200
+Wire Wire Line
+	1500 4200 1800 4200
+Wire Wire Line
+	1500 3950 1500 4200
+Connection ~ 1800 4200
+Wire Wire Line
+	2200 4000 1650 4000
+Wire Wire Line
+	1650 4000 1650 3800
+Connection ~ 1650 3800
+Wire Wire Line
+	1650 3800 1500 3800
 $EndSCHEMATC
