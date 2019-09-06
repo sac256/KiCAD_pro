@@ -31,7 +31,7 @@ U 1 1 5D59C729
 P 8950 5750
 F 0 "U5" H 8950 5992 50  0000 C CNN
 F 1 "R-781.8-1.0" H 8950 5901 50  0000 C CNN
-F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT" H 9000 5500 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 9000 5500 50  0001 L CIN
 F 3 "https://www.recom-power.com/pdf/Innoline/R-78xx-1.0.pdf" H 8950 5750 50  0001 C CNN
 	1    8950 5750
 	1    0    0    -1  
@@ -852,7 +852,7 @@ U 1 1 5D59F8D8
 P 7650 5750
 F 0 "F1" H 7650 5935 50  0000 C CNN
 F 1 "Fuse_Small" H 7650 5844 50  0000 C CNN
-F 2 "" H 7650 5750 50  0001 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7650 5750 50  0001 C CNN
 F 3 "~" H 7650 5750 50  0001 C CNN
 	1    7650 5750
 	1    0    0    -1  
@@ -914,4 +914,21 @@ Wire Wire Line
 	7900 5100 7900 5300
 Wire Wire Line
 	7900 5300 7700 5300
+$Comp
+L Device:Jumper JP4
+U 1 1 5D72B739
+P 7500 4350
+F 0 "JP4" H 7500 4614 50  0000 C CNN
+F 1 "Mode_Switch" H 7500 4523 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 7500 4350 50  0001 C CNN
+F 3 "~" H 7500 4350 50  0001 C CNN
+	1    7500 4350
+	1    0    0    -1  
+$EndComp
+Text GLabel 2300 1650 2    50   Input ~ 0
+MODE_SW
+Text GLabel 7200 4350 0    50   Input ~ 0
+MODE_SW
+Text GLabel 7800 4350 2    50   Input ~ 0
+GND
 $EndSCHEMATC
