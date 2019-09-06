@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:HS-TARGET_001-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,21 +15,21 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:C C?
+L Device:C C1
 U 1 1 5D598013
 P 850 1800
-F 0 "C?" H 965 1846 50  0000 L CNN
+F 0 "C1" H 965 1846 50  0000 L CNN
 F 1 "0.1uf" H 965 1755 50  0000 L CNN
-F 2 "" H 888 1650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 888 1650 50  0001 C CNN
 F 3 "~" H 850 1800 50  0001 C CNN
 	1    850  1800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:R-781.8-1.0 U?
+L Regulator_Switching:R-781.8-1.0 U5
 U 1 1 5D59C729
 P 8950 5750
-F 0 "U?" H 8950 5992 50  0000 C CNN
+F 0 "U5" H 8950 5992 50  0000 C CNN
 F 1 "R-781.8-1.0" H 8950 5901 50  0000 C CNN
 F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT" H 9000 5500 50  0001 L CIN
 F 3 "https://www.recom-power.com/pdf/Innoline/R-78xx-1.0.pdf" H 8950 5750 50  0001 C CNN
@@ -36,65 +37,54 @@ F 3 "https://www.recom-power.com/pdf/Innoline/R-78xx-1.0.pdf" H 8950 5750 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C4
 U 1 1 5D59D0F7
 P 7950 5900
-F 0 "C?" H 8065 5946 50  0000 L CNN
+F 0 "C4" H 8065 5946 50  0000 L CNN
 F 1 "100uf" H 8065 5855 50  0000 L CNN
-F 2 "" H 7988 5750 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7988 5750 50  0001 C CNN
 F 3 "~" H 7950 5900 50  0001 C CNN
 	1    7950 5900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C5
 U 1 1 5D59D76B
 P 8400 5900
-F 0 "C?" H 8515 5946 50  0000 L CNN
+F 0 "C5" H 8515 5946 50  0000 L CNN
 F 1 "0.1uf" H 8515 5855 50  0000 L CNN
-F 2 "" H 8438 5750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8438 5750 50  0001 C CNN
 F 3 "~" H 8400 5900 50  0001 C CNN
 	1    8400 5900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C6
 U 1 1 5D59D95C
 P 9450 5900
-F 0 "C?" H 9565 5946 50  0000 L CNN
+F 0 "C6" H 9565 5946 50  0000 L CNN
 F 1 "0.1uf" H 9565 5855 50  0000 L CNN
-F 2 "" H 9488 5750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 9488 5750 50  0001 C CNN
 F 3 "~" H 9450 5900 50  0001 C CNN
 	1    9450 5900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C7
 U 1 1 5D59DB5F
 P 9900 5900
-F 0 "C?" H 10015 5946 50  0000 L CNN
+F 0 "C7" H 10015 5946 50  0000 L CNN
 F 1 "100uf" H 10015 5855 50  0000 L CNN
-F 2 "" H 9938 5750 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 9938 5750 50  0001 C CNN
 F 3 "~" H 9900 5900 50  0001 C CNN
 	1    9900 5900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Fuse_Small F?
-U 1 1 5D59F8D8
-P 7650 5750
-F 0 "F?" H 7650 5935 50  0000 C CNN
-F 1 "Fuse_Small" H 7650 5844 50  0000 C CNN
-F 2 "" H 7650 5750 50  0001 C CNN
-F 3 "~" H 7650 5750 50  0001 C CNN
-	1    7650 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Interface_Optical:TSOP585xx U?
+L Interface_Optical:TSOP585xx U1
 U 1 1 5D5A22C4
 P 1550 7250
-F 0 "U?" H 1538 7675 50  0000 C CNN
+F 0 "U1" H 1538 7675 50  0000 C CNN
 F 1 "TSOP59540TR1" H 1538 7584 50  0000 C CNN
 F 2 "OptoDevice:Vishay_MINICAST-3Pin" H 1500 6875 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/82462/tsop581.pdf" H 2200 7550 50  0001 C CNN
@@ -102,23 +92,23 @@ F 3 "http://www.vishay.com/docs/82462/tsop581.pdf" H 2200 7550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C2
 U 1 1 5D5A388C
 P 2100 7250
-F 0 "C?" H 2215 7296 50  0000 L CNN
+F 0 "C2" H 2215 7296 50  0000 L CNN
 F 1 "10uf" H 2215 7205 50  0000 L CNN
-F 2 "" H 2138 7100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2138 7100 50  0001 C CNN
 F 3 "~" H 2100 7250 50  0001 C CNN
 	1    2100 7250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R2
 U 1 1 5D5A3B8A
 P 2250 7050
-F 0 "R?" V 2045 7050 50  0000 C CNN
+F 0 "R2" V 2045 7050 50  0000 C CNN
 F 1 "100" V 2136 7050 50  0000 C CNN
-F 2 "" V 2290 7040 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2290 7040 50  0001 C CNN
 F 3 "~" H 2250 7050 50  0001 C CNN
 	1    2250 7050
 	0    1    1    0   
@@ -144,10 +134,10 @@ IRsen
 Text GLabel 2400 7050 2    50   Input ~ 0
 +5V
 $Comp
-L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-XH-A_LF__SN_ J?
+L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-XH-A_LF__SN_ J1
 U 1 1 5D59E3AF
 P 850 850
-F 0 "J?" V 625 858 50  0000 C CNN
+F 0 "J1" V 625 858 50  0000 C CNN
 F 1 "5V_Serial" V 716 858 50  0000 C CNN
 F 2 "digikey-footprints:PinHeader_1x4_P2.5mm_Drill1.1mm" H 1050 1050 60  0001 L CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 1050 1150 60  0001 L CNN
@@ -178,10 +168,7 @@ Wire Wire Line
 	7950 6050 7550 6050
 Connection ~ 7950 6050
 Wire Wire Line
-	7750 5750 7950 5750
-Wire Wire Line
 	7950 5750 8400 5750
-Connection ~ 7950 5750
 Wire Wire Line
 	8400 5750 8650 5750
 Connection ~ 8400 5750
@@ -196,78 +183,78 @@ Connection ~ 9900 5750
 Text GLabel 10000 5750 2    50   Input ~ 0
 +3.3V
 $Comp
-L Device:LED_ARGB D?
+L Device:LED_ARGB D2
 U 1 1 5D5E563C
 P 5450 4400
-F 0 "D?" V 5496 4070 50  0000 R CNN
+F 0 "D2" V 5496 4070 50  0000 R CNN
 F 1 "LED_ARGB" V 5405 4070 50  0000 R CNN
-F 2 "" H 5450 4350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5450 4350 50  0001 C CNN
 F 3 "~" H 5450 4350 50  0001 C CNN
 	1    5450 4400
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R8
 U 1 1 5D5E6BCB
 P 5250 4750
-F 0 "R?" H 5318 4796 50  0000 L CNN
+F 0 "R8" H 5318 4796 50  0000 L CNN
 F 1 "3.3k" H 5318 4705 50  0000 L CNN
-F 2 "" V 5290 4740 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5290 4740 50  0001 C CNN
 F 3 "~" H 5250 4750 50  0001 C CNN
 	1    5250 4750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R9
 U 1 1 5D5E73D4
 P 5450 4750
-F 0 "R?" H 5518 4796 50  0000 L CNN
+F 0 "R9" H 5518 4796 50  0000 L CNN
 F 1 "3.3k" H 5518 4705 50  0000 L CNN
-F 2 "" V 5490 4740 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5490 4740 50  0001 C CNN
 F 3 "~" H 5450 4750 50  0001 C CNN
 	1    5450 4750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R10
 U 1 1 5D5E7B9E
 P 5650 4750
-F 0 "R?" H 5718 4796 50  0000 L CNN
+F 0 "R10" H 5718 4796 50  0000 L CNN
 F 1 "3.3k" H 5718 4705 50  0000 L CNN
-F 2 "" V 5690 4740 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5690 4740 50  0001 C CNN
 F 3 "~" H 5650 4750 50  0001 C CNN
 	1    5650 4750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GDS Q2
 U 1 1 5D5E954F
 P 5350 5400
-F 0 "Q?" H 5556 5446 50  0000 L CNN
+F 0 "Q2" H 5556 5446 50  0000 L CNN
 F 1 "Q_NMOS_GDS" H 5556 5355 50  0000 L CNN
-F 2 "" H 5550 5500 50  0001 C CNN
+F 2 "digikey-footprints:SOT-23W" H 5550 5500 50  0001 C CNN
 F 3 "~" H 5350 5400 50  0001 C CNN
 	1    5350 5400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GDS Q3
 U 1 1 5D5EA71D
 P 5550 5700
-F 0 "Q?" H 5756 5746 50  0000 L CNN
+F 0 "Q3" H 5756 5746 50  0000 L CNN
 F 1 "Q_NMOS_GDS" H 5756 5655 50  0000 L CNN
-F 2 "" H 5750 5800 50  0001 C CNN
+F 2 "digikey-footprints:SOT-23W" H 5750 5800 50  0001 C CNN
 F 3 "~" H 5550 5700 50  0001 C CNN
 	1    5550 5700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GDS Q1
 U 1 1 5D5E83B5
 P 5150 5100
-F 0 "Q?" H 5356 5146 50  0000 L CNN
+F 0 "Q1" H 5356 5146 50  0000 L CNN
 F 1 "Q_NMOS_GDS" H 5356 5055 50  0000 L CNN
-F 2 "" H 5350 5200 50  0001 C CNN
+F 2 "digikey-footprints:SOT-23W" H 5350 5200 50  0001 C CNN
 F 3 "~" H 5150 5100 50  0001 C CNN
 	1    5150 5100
 	1    0    0    -1  
@@ -297,21 +284,21 @@ Wire Wire Line
 Text GLabel 5600 4150 2    50   Input ~ 0
 +5V
 $Comp
-L Switch:SW_DIP_x04 SW?
+L Switch:SW_DIP_x04 SW2
 U 1 1 5D60F003
 P 6000 7050
-F 0 "SW?" H 6000 7517 50  0000 C CNN
+F 0 "SW2" H 6000 7517 50  0000 C CNN
 F 1 "SW_DIP_x04" H 6000 7426 50  0000 C CNN
-F 2 "" H 6000 7050 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx04_Slide_6.7x11.72mm_W7.62mm_P2.54mm_LowProfile" H 6000 7050 50  0001 C CNN
 F 3 "~" H 6000 7050 50  0001 C CNN
 	1    6000 7050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Network04_US RN?
+L Device:R_Network04_US RN1
 U 1 1 5D6104F1
 P 5450 6550
-F 0 "RN?" H 5638 6596 50  0000 L CNN
+F 0 "RN1" H 5638 6596 50  0000 L CNN
 F 1 "R_Network04_US" H 5638 6505 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP5" V 5725 6550 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5450 6550 50  0001 C CNN
@@ -346,8 +333,6 @@ Wire Wire Line
 Connection ~ 5550 7150
 Wire Wire Line
 	5550 7150 5000 7150
-Wire Wire Line
-	10950 5800 10800 5800
 Text GLabel 6150 7350 0    50   Input ~ 0
 GND
 Wire Wire Line
@@ -409,45 +394,45 @@ RX_J
 Text GLabel 3450 4450 2    50   Input ~ 0
 TX_J
 $Comp
-L Device:R_US R?
+L Device:R_US R6
 U 1 1 5D5A1913
 P 3300 4450
-F 0 "R?" H 3368 4496 50  0000 L CNN
+F 0 "R6" H 3368 4496 50  0000 L CNN
 F 1 "1k" H 3368 4405 50  0000 L CNN
-F 2 "" V 3340 4440 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3340 4440 50  0001 C CNN
 F 3 "~" H 3300 4450 50  0001 C CNN
 	1    3300 4450
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Jumper_NC_Dual JP?
+L Device:Jumper_NC_Dual JP2
 U 1 1 5D7DDE4D
 P 3250 5750
-F 0 "JP?" H 3250 5989 50  0000 C CNN
+F 0 "JP2" H 3250 5989 50  0000 C CNN
 F 1 "Jumper" H 3250 5898 50  0000 C CNN
-F 2 "" H 3250 5750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3250 5750 50  0001 C CNN
 F 3 "~" H 3250 5750 50  0001 C CNN
 	1    3250 5750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Dual JP?
+L Device:Jumper_NC_Dual JP1
 U 1 1 5D7D11B0
 P 3250 5250
-F 0 "JP?" H 3250 5489 50  0000 C CNN
+F 0 "JP1" H 3250 5489 50  0000 C CNN
 F 1 "Jumper" H 3250 5398 50  0000 C CNN
-F 2 "" H 3250 5250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3250 5250 50  0001 C CNN
 F 3 "~" H 3250 5250 50  0001 C CNN
 	1    3250 5250
 	1    0    0    -1  
 $EndComp
 $Comp
-L HotSprings:TWELITE_DIP U?
+L HotSprings:TWELITE_DIP U4
 U 1 1 5D598C06
 P 3650 6800
-F 0 "U?" H 3650 7625 50  0000 C CNN
+F 0 "U4" H 3650 7625 50  0000 C CNN
 F 1 "TWELITE_DIP" H 3650 7534 50  0000 C CNN
-F 2 "" H 3650 7500 50  0001 C CNN
+F 2 "hotsprings-footprints:TWELITE-DIP" H 3650 7500 50  0001 C CNN
 F 3 "" H 3650 7500 50  0001 C CNN
 	1    3650 6800
 	1    0    0    -1  
@@ -516,34 +501,34 @@ Wire Wire Line
 Text GLabel 3550 2800 2    50   Input ~ 0
 +5V
 $Comp
-L Switch:SW_DPST_x2 SW?
+L Switch:SW_DPST_x2 SW1
 U 1 1 5D709A42
 P 3800 3150
-F 0 "SW?" H 3800 3385 50  0000 C CNN
+F 0 "SW1" H 3800 3385 50  0000 C CNN
 F 1 "RESET" H 3800 3294 50  0000 C CNN
-F 2 "" H 3800 3150 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 3800 3150 50  0001 C CNN
 F 3 "~" H 3800 3150 50  0001 C CNN
 	1    3800 3150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C3
 U 1 1 5D708398
 P 3500 3450
-F 0 "C?" H 3615 3496 50  0000 L CNN
+F 0 "C3" H 3615 3496 50  0000 L CNN
 F 1 "0.1uf" H 3615 3405 50  0000 L CNN
-F 2 "" H 3538 3300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3538 3300 50  0001 C CNN
 F 3 "~" H 3500 3450 50  0001 C CNN
 	1    3500 3450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R7
 U 1 1 5D707D73
 P 3400 3000
-F 0 "R?" H 3468 3046 50  0000 L CNN
+F 0 "R7" H 3468 3046 50  0000 L CNN
 F 1 "10k" H 3468 2955 50  0000 L CNN
-F 2 "" V 3440 2990 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3440 2990 50  0001 C CNN
 F 3 "~" H 3400 3000 50  0001 C CNN
 	1    3400 3000
 	1    0    0    -1  
@@ -606,33 +591,27 @@ Wire Wire Line
 Wire Wire Line
 	2300 1750 2800 1750
 $Comp
-L Device:R_US R?
+L Device:R_US R5
 U 1 1 5D67130A
 P 3100 1450
-F 0 "R?" V 2895 1450 50  0000 C CNN
+F 0 "R5" V 2895 1450 50  0000 C CNN
 F 1 "51" V 2986 1450 50  0000 C CNN
-F 2 "" V 3140 1440 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3140 1440 50  0001 C CNN
 F 3 "~" H 3100 1450 50  0001 C CNN
 	1    3100 1450
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D1
 U 1 1 5D670524
 P 3400 1450
-F 0 "D?" H 3393 1195 50  0000 C CNN
+F 0 "D1" H 3393 1195 50  0000 C CNN
 F 1 "IR_LED" H 3393 1286 50  0000 C CNN
-F 2 "" H 3400 1450 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 3400 1450 50  0001 C CNN
 F 3 "~" H 3400 1450 50  0001 C CNN
 	1    3400 1450
 	-1   0    0    1   
 $EndComp
-Text GLabel 3500 1850 2    50   Input ~ 0
-GND
-Wire Wire Line
-	3450 1850 3500 1850
-Wire Wire Line
-	3450 1700 3450 1850
 Wire Wire Line
 	2950 1850 3250 1850
 Wire Wire Line
@@ -645,17 +624,6 @@ Wire Wire Line
 	2700 2250 2700 1550
 Wire Wire Line
 	2300 2250 2700 2250
-$Comp
-L Device:Crystal_GND2 Y?
-U 1 1 5D6664B4
-P 3250 1700
-F 0 "Y?" V 3296 1831 50  0000 L CNN
-F 1 "Crystal" V 3205 1831 50  0000 L CNN
-F 2 "" H 3250 1700 50  0001 C CNN
-F 3 "~" H 3250 1700 50  0001 C CNN
-	1    3250 1700
-	0    -1   -1   0   
-$EndComp
 Text GLabel 3550 2250 1    50   Input ~ 0
 +5V
 Text GLabel 3550 2600 2    50   Input ~ 0
@@ -687,12 +655,12 @@ Wire Wire Line
 Wire Wire Line
 	2300 2050 2850 2050
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J2
 U 1 1 5D64DB89
 P 3050 2950
-F 0 "J?" H 3130 2942 50  0000 L CNN
+F 0 "J2" H 3130 2942 50  0000 L CNN
 F 1 "i2c" H 3130 2851 50  0000 L CNN
-F 2 "" H 3050 2950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3050 2950 50  0001 C CNN
 F 3 "~" H 3050 2950 50  0001 C CNN
 	1    3050 2950
 	1    0    0    -1  
@@ -731,45 +699,45 @@ Wire Wire Line
 Wire Wire Line
 	1800 1350 1800 1200
 $Comp
-L Device:R_US R?
+L Device:R_US R3
 U 1 1 5D63AA14
 P 2400 1350
-F 0 "R?" H 2468 1396 50  0000 L CNN
+F 0 "R3" H 2468 1396 50  0000 L CNN
 F 1 "10k" H 2468 1305 50  0000 L CNN
-F 2 "" V 2440 1340 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2440 1340 50  0001 C CNN
 F 3 "~" H 2400 1350 50  0001 C CNN
 	1    2400 1350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R4
 U 1 1 5D63984B
 P 2650 1350
-F 0 "R?" H 2718 1396 50  0000 L CNN
+F 0 "R4" H 2718 1396 50  0000 L CNN
 F 1 "10k" H 2718 1305 50  0000 L CNN
-F 2 "" V 2690 1340 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2690 1340 50  0001 C CNN
 F 3 "~" H 2650 1350 50  0001 C CNN
 	1    2650 1350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J?
+L Connector_Generic:Conn_02x03_Odd_Even J3
 U 1 1 5D63917D
 P 3250 2500
-F 0 "J?" H 3300 2817 50  0000 C CNN
+F 0 "J3" H 3300 2817 50  0000 C CNN
 F 1 "ICSP" H 3300 2726 50  0000 C CNN
-F 2 "" H 3250 2500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 3250 2500 50  0001 C CNN
 F 3 "~" H 3250 2500 50  0001 C CNN
 	1    3250 2500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x06 J?
+L Connector_Generic:Conn_01x06 J4
 U 1 1 5D6287C6
 P 3700 3800
-F 0 "J?" H 3780 3792 50  0000 L CNN
+F 0 "J4" H 3780 3792 50  0000 L CNN
 F 1 "PROG" H 3780 3701 50  0000 L CNN
-F 2 "" H 3700 3800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3700 3800 50  0001 C CNN
 F 3 "~" H 3700 3800 50  0001 C CNN
 	1    3700 3800
 	1    0    0    -1  
@@ -803,43 +771,43 @@ Wire Wire Line
 Wire Wire Line
 	1350 5500 1250 5500
 $Comp
-L Device:R_US R?
+L Device:R_US R1
 U 1 1 5D5A1258
 P 1050 5050
-F 0 "R?" H 1118 5096 50  0000 L CNN
+F 0 "R1" H 1118 5096 50  0000 L CNN
 F 1 "1k" H 1118 5005 50  0000 L CNN
-F 2 "" V 1090 5040 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1090 5040 50  0001 C CNN
 F 3 "~" H 1050 5050 50  0001 C CNN
 	1    1050 5050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Speaker LS?
+L Device:Speaker LS1
 U 1 1 5D59B7E3
 P 1700 6100
-F 0 "LS?" H 1870 6096 50  0000 L CNN
+F 0 "LS1" H 1870 6096 50  0000 L CNN
 F 1 "Speaker" H 1870 6005 50  0000 L CNN
-F 2 "" H 1700 5900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1700 5900 50  0001 C CNN
 F 3 "~" H 1690 6050 50  0001 C CNN
 	1    1700 6100
 	1    0    0    -1  
 $EndComp
 $Comp
-L HotSprings:DFPLAYER_MINI U?
+L HotSprings:DFPLAYER_MINI U3
 U 1 1 5D5985F3
 P 1850 5450
-F 0 "U?" H 1850 6025 50  0000 C CNN
+F 0 "U3" H 1850 6025 50  0000 C CNN
 F 1 "DFPLAYER_MINI" H 1850 5934 50  0000 C CNN
-F 2 "" H 1850 5900 50  0001 C CNN
+F 2 "hotsprings-footprints:DFPlayer-MINI" H 1850 5900 50  0001 C CNN
 F 3 "" H 1850 5900 50  0001 C CNN
 	1    1850 5450
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-PU U?
+L MCU_Microchip_ATmega:ATmega328P-PU U2
 U 1 1 5D592A8D
 P 1700 2850
-F 0 "U?" V 919 2850 50  0000 C CNN
+F 0 "U2" V 919 2850 50  0000 C CNN
 F 1 "ATmega328P-PU" V 1010 2850 50  0000 C CNN
 F 2 "Package_DIP:DIP-28_W7.62mm" H 1700 2850 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 1700 2850 50  0001 C CNN
@@ -855,5 +823,95 @@ TXOUT
 Text GLabel 950  1150 2    50   Input ~ 0
 RXOUT
 Wire Wire Line
-	10950 5300 10950 5800
+	6300 6850 6300 6950
+Wire Wire Line
+	6300 7350 6150 7350
+Connection ~ 6300 6950
+Wire Wire Line
+	6300 6950 6300 7050
+Connection ~ 6300 7050
+Wire Wire Line
+	6300 7050 6300 7150
+Connection ~ 6300 7150
+Wire Wire Line
+	6300 7150 6300 7350
+$Comp
+L Device:Crystal Y1
+U 1 1 5D75EE8D
+P 3250 1700
+F 0 "Y1" V 3204 1831 50  0000 L CNN
+F 1 "Crystal" V 3295 1831 50  0000 L CNN
+F 2 "Crystal:Crystal_HC49-4H_Vertical" H 3250 1700 50  0001 C CNN
+F 3 "~" H 3250 1700 50  0001 C CNN
+	1    3250 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse_Small F1
+U 1 1 5D59F8D8
+P 7650 5750
+F 0 "F1" H 7650 5935 50  0000 C CNN
+F 1 "Fuse_Small" H 7650 5844 50  0000 C CNN
+F 2 "" H 7650 5750 50  0001 C CNN
+F 3 "~" H 7650 5750 50  0001 C CNN
+	1    7650 5750
+	1    0    0    -1  
+$EndComp
+Connection ~ 7950 5750
+Wire Wire Line
+	7750 5750 7900 5750
+$Comp
+L HotSprings:AE-XCL102D503CR-G U6
+U 1 1 5D7904A3
+P 7550 5000
+F 0 "U6" H 7550 5335 50  0000 C CNN
+F 1 "AE-XCL102D503CR-G" H 7550 5244 50  0000 C CNN
+F 2 "hotsprings-footprints:AE-XCL102D503CR-G" H 7550 5210 50  0001 C CNN
+F 3 "" H 7550 5210 50  0001 C CNN
+	1    7550 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP3
+U 1 1 5D7BA38C
+P 8200 5200
+F 0 "JP3" V 8154 5327 50  0000 L CNN
+F 1 "Jumper" V 8245 5327 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8200 5200 50  0001 C CNN
+F 3 "~" H 8200 5200 50  0001 C CNN
+	1    8200 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 4900 8200 4900
+Wire Wire Line
+	8200 5500 7900 5500
+Wire Wire Line
+	7900 5500 7900 5750
+Connection ~ 7900 5750
+Wire Wire Line
+	7900 5750 7950 5750
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5D7CEFEB
+P 7500 5400
+F 0 "J5" H 7580 5392 50  0000 L CNN
+F 1 "dry_cell" H 7580 5301 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7500 5400 50  0001 C CNN
+F 3 "~" H 7500 5400 50  0001 C CNN
+	1    7500 5400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7850 5000 8050 5000
+Wire Wire Line
+	8050 5000 8050 5400
+Wire Wire Line
+	8050 5400 7700 5400
+Wire Wire Line
+	7850 5100 7900 5100
+Wire Wire Line
+	7900 5100 7900 5300
+Wire Wire Line
+	7900 5300 7700 5300
 $EndSCHEMATC
