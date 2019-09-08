@@ -31,7 +31,7 @@ U 1 1 5D59C729
 P 8950 5750
 F 0 "U5" H 8950 5992 50  0000 C CNN
 F 1 "R-781.8-1.0" H 8950 5901 50  0000 C CNN
-F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT" H 9000 5500 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 9000 5500 50  0001 L CIN
 F 3 "https://www.recom-power.com/pdf/Innoline/R-78xx-1.0.pdf" H 8950 5750 50  0001 C CNN
 	1    8950 5750
 	1    0    0    -1  
@@ -852,14 +852,12 @@ U 1 1 5D59F8D8
 P 7650 5750
 F 0 "F1" H 7650 5935 50  0000 C CNN
 F 1 "Fuse_Small" H 7650 5844 50  0000 C CNN
-F 2 "" H 7650 5750 50  0001 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7650 5750 50  0001 C CNN
 F 3 "~" H 7650 5750 50  0001 C CNN
 	1    7650 5750
 	1    0    0    -1  
 $EndComp
 Connection ~ 7950 5750
-Wire Wire Line
-	7750 5750 7900 5750
 $Comp
 L HotSprings:AE-XCL102D503CR-G U6
 U 1 1 5D7904A3
@@ -871,26 +869,8 @@ F 3 "" H 7550 5210 50  0001 C CNN
 	1    7550 5000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper JP3
-U 1 1 5D7BA38C
-P 8200 5200
-F 0 "JP3" V 8154 5327 50  0000 L CNN
-F 1 "Jumper" V 8245 5327 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8200 5200 50  0001 C CNN
-F 3 "~" H 8200 5200 50  0001 C CNN
-	1    8200 5200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7850 4900 8200 4900
-Wire Wire Line
-	8200 5500 7900 5500
-Wire Wire Line
-	7900 5500 7900 5750
-Connection ~ 7900 5750
-Wire Wire Line
-	7900 5750 7950 5750
 $Comp
 L Connector_Generic:Conn_01x02 J5
 U 1 1 5D7CEFEB
@@ -905,15 +885,7 @@ $EndComp
 Wire Wire Line
 	7850 5000 8050 5000
 Wire Wire Line
-	8050 5000 8050 5400
-Wire Wire Line
-	8050 5400 7700 5400
-Wire Wire Line
 	7850 5100 7900 5100
-Wire Wire Line
-	7900 5100 7900 5300
-Wire Wire Line
-	7900 5300 7700 5300
 $Comp
 L Device:Jumper JP4
 U 1 1 5D72B739
@@ -931,4 +903,20 @@ Text GLabel 7200 4350 0    50   Input ~ 0
 MODE_SW
 Text GLabel 7800 4350 2    50   Input ~ 0
 GND
+Wire Wire Line
+	8200 4900 8200 5500
+Wire Wire Line
+	7900 5300 7700 5300
+Wire Wire Line
+	7900 5100 7900 5300
+Wire Wire Line
+	8050 5400 7700 5400
+Wire Wire Line
+	8050 5000 8050 5400
+Wire Wire Line
+	7750 5750 7950 5750
+Wire Wire Line
+	8200 5500 7950 5500
+Wire Wire Line
+	7950 5500 7950 5750
 $EndSCHEMATC

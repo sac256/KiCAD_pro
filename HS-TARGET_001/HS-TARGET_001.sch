@@ -506,7 +506,7 @@ U 1 1 5D709A42
 P 3800 3150
 F 0 "SW1" H 3800 3385 50  0000 C CNN
 F 1 "RESET" H 3800 3294 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 3800 3150 50  0001 C CNN
+F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 3800 3150 50  0001 C CNN
 F 3 "~" H 3800 3150 50  0001 C CNN
 	1    3800 3150
 	1    0    0    -1  
@@ -858,8 +858,6 @@ F 3 "~" H 7650 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 7950 5750
-Wire Wire Line
-	7750 5750 7900 5750
 $Comp
 L HotSprings:AE-XCL102D503CR-G U6
 U 1 1 5D7904A3
@@ -871,26 +869,8 @@ F 3 "" H 7550 5210 50  0001 C CNN
 	1    7550 5000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper JP3
-U 1 1 5D7BA38C
-P 8200 5200
-F 0 "JP3" V 8154 5327 50  0000 L CNN
-F 1 "Jumper" V 8245 5327 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8200 5200 50  0001 C CNN
-F 3 "~" H 8200 5200 50  0001 C CNN
-	1    8200 5200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7850 4900 8200 4900
-Wire Wire Line
-	8200 5500 7900 5500
-Wire Wire Line
-	7900 5500 7900 5750
-Connection ~ 7900 5750
-Wire Wire Line
-	7900 5750 7950 5750
 $Comp
 L Connector_Generic:Conn_01x02 J5
 U 1 1 5D7CEFEB
@@ -905,15 +885,7 @@ $EndComp
 Wire Wire Line
 	7850 5000 8050 5000
 Wire Wire Line
-	8050 5000 8050 5400
-Wire Wire Line
-	8050 5400 7700 5400
-Wire Wire Line
 	7850 5100 7900 5100
-Wire Wire Line
-	7900 5100 7900 5300
-Wire Wire Line
-	7900 5300 7700 5300
 $Comp
 L Device:Jumper JP4
 U 1 1 5D72B739
@@ -931,4 +903,20 @@ Text GLabel 7200 4350 0    50   Input ~ 0
 MODE_SW
 Text GLabel 7800 4350 2    50   Input ~ 0
 GND
+Wire Wire Line
+	8200 4900 8200 5500
+Wire Wire Line
+	7900 5300 7700 5300
+Wire Wire Line
+	7900 5100 7900 5300
+Wire Wire Line
+	8050 5400 7700 5400
+Wire Wire Line
+	8050 5000 8050 5400
+Wire Wire Line
+	7750 5750 7950 5750
+Wire Wire Line
+	8200 5500 7950 5500
+Wire Wire Line
+	7950 5500 7950 5750
 $EndSCHEMATC
