@@ -706,13 +706,13 @@
     )
   )
 
-  (gr_text ver.1.0 (at 140.01 117.01) (layer F.SilkS)
+  (gr_text ver.1.1 (at 140.01 117.01) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_text HS-TAGLED_001[100mm] (at 130.01 114.01) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_circle (center 129.655143 90.11) (end 177.155142 90.11) (layer Eco1.User) (width 0.2))
+  (gr_circle (center 129.655143 90.11) (end 177.155142 90.11) (layer Edge.Cuts) (width 0.2))
   (gr_circle (center 90.4558 90.1089) (end 92.205801 90.1089) (layer Edge.Cuts) (width 0.2) (tstamp 5D74DC18))
   (gr_circle (center 168.8558 90.1089) (end 170.605799 90.1089) (layer Edge.Cuts) (width 0.2) (tstamp 5D74DC17))
 
