@@ -225,6 +225,39 @@ F 3 "~" H 5650 4750 50  0001 C CNN
 	1    5650 4750
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Q_NMOS_GDS Q2
+U 1 1 5D5E954F
+P 5350 5400
+F 0 "Q2" H 5556 5446 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 5556 5355 50  0000 L CNN
+F 2 "digikey-footprints:SOT-23W" H 5550 5500 50  0001 C CNN
+F 3 "~" H 5350 5400 50  0001 C CNN
+	1    5350 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q3
+U 1 1 5D5EA71D
+P 5550 5700
+F 0 "Q3" H 5756 5746 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 5756 5655 50  0000 L CNN
+F 2 "digikey-footprints:SOT-23W" H 5750 5800 50  0001 C CNN
+F 3 "~" H 5550 5700 50  0001 C CNN
+	1    5550 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q1
+U 1 1 5D5E83B5
+P 5150 5100
+F 0 "Q1" H 5356 5146 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 5356 5055 50  0000 L CNN
+F 2 "digikey-footprints:SOT-23W" H 5350 5200 50  0001 C CNN
+F 3 "~" H 5150 5100 50  0001 C CNN
+	1    5150 5100
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	5450 4900 5450 5200
 Wire Wire Line
@@ -235,6 +268,12 @@ Wire Wire Line
 	5250 5600 5450 5600
 Wire Wire Line
 	5450 5600 5450 5900
+Wire Wire Line
+	5450 5900 5650 5900
+Connection ~ 5450 5600
+Wire Wire Line
+	5650 5900 5800 5900
+Connection ~ 5650 5900
 Text GLabel 5800 5900 2    50   Input ~ 0
 GND
 Wire Wire Line
@@ -879,43 +918,4 @@ Wire Wire Line
 	8200 5500 7950 5500
 Wire Wire Line
 	7950 5500 7950 5750
-$Comp
-L Device:Q_NMOS_GSD Q1
-U 1 1 604D134C
-P 5150 5100
-F 0 "Q1" H 5354 5146 50  0000 L CNN
-F 1 "Q_NMOS_GSD" H 5354 5055 50  0000 L CNN
-F 2 "digikey-footprints:SOT-23W" H 5350 5200 50  0001 C CNN
-F 3 "~" H 5150 5100 50  0001 C CNN
-	1    5150 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NMOS_GSD Q2
-U 1 1 604F069A
-P 5350 5400
-F 0 "Q2" H 5554 5446 50  0000 L CNN
-F 1 "Q_NMOS_GSD" H 5554 5355 50  0000 L CNN
-F 2 "digikey-footprints:SOT-23W" H 5550 5500 50  0001 C CNN
-F 3 "~" H 5350 5400 50  0001 C CNN
-	1    5350 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NMOS_GSD Q3
-U 1 1 604F13AB
-P 5550 5700
-F 0 "Q3" H 5754 5746 50  0000 L CNN
-F 1 "Q_NMOS_GSD" H 5754 5655 50  0000 L CNN
-F 2 "digikey-footprints:SOT-23W" H 5750 5800 50  0001 C CNN
-F 3 "~" H 5550 5700 50  0001 C CNN
-	1    5550 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 5900 5650 5900
-Connection ~ 5450 5600
-Connection ~ 5650 5900
-Wire Wire Line
-	5650 5900 5800 5900
 $EndSCHEMATC

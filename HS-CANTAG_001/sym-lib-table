@@ -1,2 +1,3 @@
 (sym_lib_table
+  (lib (name HS-CANTAG_001-rescue)(type Legacy)(uri ${KIPRJMOD}/HS-CANTAG_001-rescue.lib)(options "")(descr ""))
 )
