@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L HotSprings:AE-ATMEGA328-MINI U2
 U 1 1 602E81FA
-P 2900 1950
-F 0 "U2" H 2900 2775 50  0000 C CNN
-F 1 "AE-ATMEGA328-MINI" H 2900 2684 50  0000 C CNN
-F 2 "hotsprings-footprints:AE-ATMEGA328-MINI" H 2900 2650 50  0001 C CNN
-F 3 "" H 2900 2650 50  0001 C CNN
-	1    2900 1950
+P 2050 1900
+F 0 "U2" H 2050 2725 50  0000 C CNN
+F 1 "AE-ATMEGA328-MINI" H 2050 2634 50  0000 C CNN
+F 2 "hotsprings-footprints:AE-ATMEGA328-MINI" H 2050 2600 50  0001 C CNN
+F 3 "" H 2050 2600 50  0001 C CNN
+	1    2050 1900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -38,95 +38,35 @@ $EndComp
 $Comp
 L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-PH-K-S_LF__SN_ J2
 U 1 1 602F95FF
-P 1900 1200
-F 0 "J2" H 2278 1254 50  0000 L CNN
-F 1 "Serial" H 2278 1163 50  0000 L CNN
-F 2 "digikey-footprints:PinHeader_1x4_P2mm_Drill1mm" H 2100 1400 60  0001 L CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 2100 1500 60  0001 L CNN
-F 4 "455-1706-ND" H 2100 1600 60  0001 L CNN "Digi-Key_PN"
-F 5 "B4B-PH-K-S(LF)(SN)" H 2100 1700 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 2100 1800 60  0001 L CNN "Category"
-F 7 "Rectangular Connectors - Headers, Male Pins" H 2100 1900 60  0001 L CNN "Family"
-F 8 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 2100 2000 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/jst-sales-america-inc/B4B-PH-K-S(LF)(SN)/455-1706-ND/926613" H 2100 2100 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN HEADER VERT 4POS 2MM" H 2100 2200 60  0001 L CNN "Description"
-F 11 "JST Sales America Inc." H 2100 2300 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 2100 2400 60  0001 L CNN "Status"
-	1    1900 1200
+P 3600 1350
+F 0 "J2" H 3978 1404 50  0000 L CNN
+F 1 "Serial" H 3978 1313 50  0000 L CNN
+F 2 "digikey-footprints:PinHeader_1x4_P2mm_Drill1mm" H 3800 1550 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 3800 1650 60  0001 L CNN
+F 4 "455-1706-ND" H 3800 1750 60  0001 L CNN "Digi-Key_PN"
+F 5 "B4B-PH-K-S(LF)(SN)" H 3800 1850 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 3800 1950 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 3800 2050 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 3800 2150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B4B-PH-K-S(LF)(SN)/455-1706-ND/926613" H 3800 2250 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 4POS 2MM" H 3800 2350 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 3800 2450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3800 2550 60  0001 L CNN "Status"
+	1    3600 1350
 	-1   0    0    1   
 $EndComp
 Text GLabel 1100 4750 1    50   Input ~ 0
 GND
-Text GLabel 1350 1750 0    50   Input ~ 0
+Text GLabel 4300 2000 2    50   Input ~ 0
 SP1
-Text GLabel 1650 1850 0    50   Input ~ 0
+Text GLabel 3950 2100 2    50   Input ~ 0
 SP2
-Text GLabel 1950 1950 0    50   Input ~ 0
+Text GLabel 3650 2200 2    50   Input ~ 0
 SP3
-Text GLabel 2300 1450 0    50   Input ~ 0
+Text GLabel 1450 1400 0    50   Input ~ 0
 TX
-Text GLabel 2300 1350 0    50   Input ~ 0
+Text GLabel 1450 1300 0    50   Input ~ 0
 RX
-Text GLabel 1400 2400 3    50   Input ~ 0
-J1
-Text GLabel 1700 2400 3    50   Input ~ 0
-J2
-Text GLabel 2050 2400 3    50   Input ~ 0
-J3
-Wire Wire Line
-	1950 1950 2050 1950
-Wire Wire Line
-	1650 1850 1700 1850
-Wire Wire Line
-	1350 1750 1400 1750
-$Comp
-L Device:R R3
-U 1 1 603C850B
-P 2050 2250
-F 0 "R3" H 2120 2296 50  0000 L CNN
-F 1 "R" H 2120 2205 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1980 2250 50  0001 C CNN
-F 3 "~" H 2050 2250 50  0001 C CNN
-	1    2050 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 603C902F
-P 1700 2250
-F 0 "R2" H 1770 2296 50  0000 L CNN
-F 1 "R" H 1770 2205 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1630 2250 50  0001 C CNN
-F 3 "~" H 1700 2250 50  0001 C CNN
-	1    1700 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 603C9B67
-P 1400 2250
-F 0 "R1" H 1470 2296 50  0000 L CNN
-F 1 "R" H 1470 2205 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1330 2250 50  0001 C CNN
-F 3 "~" H 1400 2250 50  0001 C CNN
-	1    1400 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 2100 2050 1950
-Connection ~ 2050 1950
-Wire Wire Line
-	2050 1950 2300 1950
-Wire Wire Line
-	1700 1850 1700 2100
-Connection ~ 1700 1850
-Wire Wire Line
-	1700 1850 2300 1850
-Wire Wire Line
-	1400 1750 1400 2100
-Connection ~ 1400 1750
-Wire Wire Line
-	1400 1750 2300 1750
 Text GLabel 4750 1350 0    50   Input ~ 0
 GND
 Text GLabel 5550 1350 2    50   Input ~ 0
@@ -136,101 +76,91 @@ GND
 $Comp
 L Device:R R5
 U 1 1 6043FDD3
-P 5750 2100
-F 0 "R5" H 5820 2146 50  0000 L CNN
-F 1 "R" H 5820 2055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5680 2100 50  0001 C CNN
-F 3 "~" H 5750 2100 50  0001 C CNN
-	1    5750 2100
-	-1   0    0    1   
+P 3200 2450
+F 0 "R5" H 3270 2496 50  0000 L CNN
+F 1 "R" H 3270 2405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3130 2450 50  0001 C CNN
+F 3 "~" H 3200 2450 50  0001 C CNN
+	1    3200 2450
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R4
 U 1 1 60440634
-P 4400 1450
-F 0 "R4" H 4470 1496 50  0000 L CNN
-F 1 "R" H 4470 1405 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4330 1450 50  0001 C CNN
-F 3 "~" H 4400 1450 50  0001 C CNN
-	1    4400 1450
-	0    1    1    0   
+P 2800 2550
+F 0 "R4" H 2870 2596 50  0000 L CNN
+F 1 "R" H 2870 2505 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2730 2550 50  0001 C CNN
+F 3 "~" H 2800 2550 50  0001 C CNN
+	1    2800 2550
+	1    0    0    -1  
 $EndComp
 $Comp
 L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-PH-K-S_LF__SN_ J5
 U 1 1 60458DA2
-P 4400 2100
-F 0 "J5" H 4312 2062 50  0000 R CNN
-F 1 "i2c" H 4312 2153 50  0000 R CNN
-F 2 "digikey-footprints:PinHeader_1x4_P2mm_Drill1mm" H 4600 2300 60  0001 L CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 4600 2400 60  0001 L CNN
-F 4 "455-1706-ND" H 4600 2500 60  0001 L CNN "Digi-Key_PN"
-F 5 "B4B-PH-K-S(LF)(SN)" H 4600 2600 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 4600 2700 60  0001 L CNN "Category"
-F 7 "Rectangular Connectors - Headers, Male Pins" H 4600 2800 60  0001 L CNN "Family"
-F 8 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 4600 2900 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/jst-sales-america-inc/B4B-PH-K-S(LF)(SN)/455-1706-ND/926613" H 4600 3000 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN HEADER VERT 4POS 2MM" H 4600 3100 60  0001 L CNN "Description"
-F 11 "JST Sales America Inc." H 4600 3200 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4600 3300 60  0001 L CNN "Status"
-	1    4400 2100
+P 4150 1350
+F 0 "J5" H 4062 1312 50  0000 R CNN
+F 1 "i2c" H 4062 1403 50  0000 R CNN
+F 2 "digikey-footprints:PinHeader_1x4_P2mm_Drill1mm" H 4350 1550 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 4350 1650 60  0001 L CNN
+F 4 "455-1706-ND" H 4350 1750 60  0001 L CNN "Digi-Key_PN"
+F 5 "B4B-PH-K-S(LF)(SN)" H 4350 1850 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 4350 1950 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 4350 2050 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 4350 2150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B4B-PH-K-S(LF)(SN)/455-1706-ND/926613" H 4350 2250 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 4POS 2MM" H 4350 2350 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 4350 2450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4350 2550 60  0001 L CNN "Status"
+	1    4150 1350
 	-1   0    0    1   
 $EndComp
-Text GLabel 5750 1950 1    50   Input ~ 0
+Text GLabel 3250 2700 2    50   Input ~ 0
 3.3V
-Text GLabel 4250 1450 0    50   Input ~ 0
+Text GLabel 2900 2700 2    50   Input ~ 0
 3.3V
 Text GLabel 4750 1550 0    50   Input ~ 0
 TX
 Text GLabel 4750 2250 0    50   Input ~ 0
 RX
-Text GLabel 1900 1300 3    50   Input ~ 0
+Text GLabel 3600 1450 3    50   Input ~ 0
 GND
-Text GLabel 4400 2200 3    50   Input ~ 0
+Text GLabel 4150 1450 3    50   Input ~ 0
 GND
-Text GLabel 4300 2200 3    50   Input ~ 0
+Text GLabel 4050 1450 3    50   Input ~ 0
 3.3V
-Text GLabel 4200 2200 3    50   Input ~ 0
-TW-SDA
-Text GLabel 4100 2200 3    50   Input ~ 0
-TW-SCL
-Text GLabel 5750 2350 3    50   Input ~ 0
-TW-SDA
-Text GLabel 4550 1600 3    50   Input ~ 0
-TW-SCL
-Wire Wire Line
-	4550 1450 4750 1450
-Wire Wire Line
-	4550 1450 4550 1600
-Connection ~ 4550 1450
-Wire Wire Line
-	5550 2250 5750 2250
-Wire Wire Line
-	5750 2250 5750 2350
-Connection ~ 5750 2250
+Text GLabel 3950 1450 3    50   Input ~ 0
+SDA
+Text GLabel 3850 1450 3    50   Input ~ 0
+SCL
+Text GLabel 3300 2300 2    50   Input ~ 0
+SDA
+Text GLabel 2900 2400 2    50   Input ~ 0
+SCL
 $Comp
 L Jumper:Jumper_2_Open JP1
 U 1 1 60492550
-P 1600 1650
-F 0 "JP1" H 1600 1885 50  0000 C CNN
-F 1 "Jumper_2_Open" H 1600 1794 50  0000 C CNN
-F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 1600 1650 50  0001 C CNN
-F 3 "~" H 1600 1650 50  0001 C CNN
-	1    1600 1650
+P 3300 1800
+F 0 "JP1" H 3300 2035 50  0000 C CNN
+F 1 "Jumper_2_Open" H 3300 1944 50  0000 C CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 3300 1800 50  0001 C CNN
+F 3 "~" H 3300 1800 50  0001 C CNN
+	1    3300 1800
 	1    0    0    -1  
 $EndComp
-Text GLabel 1700 1300 3    50   Input ~ 0
+Text GLabel 3400 1450 3    50   Input ~ 0
 RX2
-Text GLabel 1600 1300 3    50   Input ~ 0
+Text GLabel 3300 1450 3    50   Input ~ 0
 TX2
 Wire Wire Line
-	1800 1300 1800 1650
-Text GLabel 1400 1500 1    50   Input ~ 0
+	3500 1450 3500 1800
+Text GLabel 3100 1650 1    50   Input ~ 0
 5V
 Wire Wire Line
-	1400 1500 1400 1650
-Text GLabel 2300 1550 0    50   Input ~ 0
+	3100 1650 3100 1800
+Text GLabel 1450 1500 0    50   Input ~ 0
 RX2
-Text GLabel 2300 1650 0    50   Input ~ 0
+Text GLabel 1450 1600 0    50   Input ~ 0
 TX2
 $Comp
 L Jumper:Jumper_2_Open JP2
@@ -271,108 +201,108 @@ Text GLabel 3450 4600 2    50   Input ~ 0
 J2
 Text GLabel 3450 4900 2    50   Input ~ 0
 J3
-Text GLabel 3350 6150 2    50   Input ~ 0
+Text GLabel 6200 4900 2    50   Input ~ 0
 GND
-Text GLabel 3350 5850 2    50   Input ~ 0
+Text GLabel 6200 4600 2    50   Input ~ 0
 3.3V
-Text GLabel 1250 6150 0    50   Input ~ 0
+Text GLabel 4100 4900 0    50   Input ~ 0
 GND
-Text GLabel 1250 5850 0    50   Input ~ 0
+Text GLabel 4100 4600 0    50   Input ~ 0
 5V
-Connection ~ 3100 6150
+Connection ~ 5950 4900
 Wire Wire Line
-	3350 6150 3100 6150
-Connection ~ 2750 6150
+	6200 4900 5950 4900
+Connection ~ 5600 4900
 Wire Wire Line
-	2750 6150 3100 6150
-Connection ~ 2250 6150
+	5600 4900 5950 4900
+Connection ~ 5100 4900
 Wire Wire Line
-	2250 6150 2750 6150
-Connection ~ 1750 6150
+	5100 4900 5600 4900
+Connection ~ 4600 4900
 Wire Wire Line
-	1750 6150 2250 6150
-Connection ~ 1400 6150
+	4600 4900 5100 4900
+Connection ~ 4250 4900
 Wire Wire Line
-	1400 6150 1750 6150
+	4250 4900 4600 4900
 Wire Wire Line
-	1250 6150 1400 6150
-Connection ~ 3100 5850
+	4100 4900 4250 4900
+Connection ~ 5950 4600
 Wire Wire Line
-	3100 5850 3350 5850
-Connection ~ 2750 5850
+	5950 4600 6200 4600
+Connection ~ 5600 4600
 Wire Wire Line
-	2750 5850 3100 5850
+	5600 4600 5950 4600
 Wire Wire Line
-	2550 5850 2750 5850
-Connection ~ 1750 5850
+	5400 4600 5600 4600
+Connection ~ 4600 4600
 Wire Wire Line
-	1750 5850 1950 5850
-Connection ~ 1400 5850
+	4600 4600 4800 4600
+Connection ~ 4250 4600
 Wire Wire Line
-	1750 5850 1400 5850
+	4600 4600 4250 4600
 Wire Wire Line
-	1250 5850 1400 5850
+	4100 4600 4250 4600
 $Comp
 L Regulator_Switching:R-783.3-0.5 U1
 U 1 1 603D7E24
-P 2250 5850
-F 0 "U1" H 2250 6092 50  0000 C CNN
-F 1 "R-783.3-0.5" H 2250 6001 50  0000 C CNN
-F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT" H 2300 5600 50  0001 L CIN
-F 3 "https://www.recom-power.com/pdf/Innoline/R-78xx-0.5.pdf" H 2250 5850 50  0001 C CNN
-	1    2250 5850
+P 5100 4600
+F 0 "U1" H 5100 4842 50  0000 C CNN
+F 1 "R-783.3-0.5" H 5100 4751 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT" H 5150 4350 50  0001 L CIN
+F 3 "https://www.recom-power.com/pdf/Innoline/R-78xx-0.5.pdf" H 5100 4600 50  0001 C CNN
+	1    5100 4600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C4
 U 1 1 603D3D72
-P 3100 6000
-F 0 "C4" H 3215 6046 50  0000 L CNN
-F 1 "C" H 3215 5955 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 3138 5850 50  0001 C CNN
-F 3 "~" H 3100 6000 50  0001 C CNN
-	1    3100 6000
+P 5950 4750
+F 0 "C4" H 6065 4796 50  0000 L CNN
+F 1 "C" H 6065 4705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 5988 4600 50  0001 C CNN
+F 3 "~" H 5950 4750 50  0001 C CNN
+	1    5950 4750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C3
 U 1 1 603D3284
-P 2750 6000
-F 0 "C3" H 2865 6046 50  0000 L CNN
-F 1 "C" H 2865 5955 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 2788 5850 50  0001 C CNN
-F 3 "~" H 2750 6000 50  0001 C CNN
-	1    2750 6000
+P 5600 4750
+F 0 "C3" H 5715 4796 50  0000 L CNN
+F 1 "C" H 5715 4705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 5638 4600 50  0001 C CNN
+F 3 "~" H 5600 4750 50  0001 C CNN
+	1    5600 4750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C2
 U 1 1 603D2C0D
-P 1750 6000
-F 0 "C2" H 1865 6046 50  0000 L CNN
-F 1 "C" H 1865 5955 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 1788 5850 50  0001 C CNN
-F 3 "~" H 1750 6000 50  0001 C CNN
-	1    1750 6000
+P 4600 4750
+F 0 "C2" H 4715 4796 50  0000 L CNN
+F 1 "C" H 4715 4705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 4638 4600 50  0001 C CNN
+F 3 "~" H 4600 4750 50  0001 C CNN
+	1    4600 4750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C1
 U 1 1 603D27D7
-P 1400 6000
-F 0 "C1" H 1515 6046 50  0000 L CNN
-F 1 "C" H 1515 5955 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 1438 5850 50  0001 C CNN
-F 3 "~" H 1400 6000 50  0001 C CNN
-	1    1400 6000
+P 4250 4750
+F 0 "C1" H 4365 4796 50  0000 L CNN
+F 1 "C" H 4365 4705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 4288 4600 50  0001 C CNN
+F 3 "~" H 4250 4750 50  0001 C CNN
+	1    4250 4750
 	1    0    0    -1  
 $EndComp
 Text GLabel 3050 4900 0    50   Input ~ 0
-5V
+GND
 Text GLabel 3050 4600 0    50   Input ~ 0
-5V
+GND
 Text GLabel 3050 4250 0    50   Input ~ 0
-5V
+GND
 NoConn ~ 2300 4300
 NoConn ~ 1900 4700
 NoConn ~ 1900 4600
@@ -393,43 +323,23 @@ F 3 " ~" H 2350 4650 50  0001 C CNN
 $EndComp
 Text GLabel 1200 4750 1    50   Input ~ 0
 5V
-Text GLabel 1500 3400 1    50   Input ~ 0
-5V
-Text GLabel 2200 3400 1    50   Input ~ 0
-5V
-Text GLabel 2900 3400 1    50   Input ~ 0
-5V
-Wire Wire Line
-	5600 5250 4550 5250
-Wire Wire Line
-	4550 4900 5200 4900
-Wire Wire Line
-	4550 4550 4800 4550
 Text GLabel 3000 3400 1    50   Input ~ 0
 w-Sensor3
 Text GLabel 2300 3400 1    50   Input ~ 0
 w-Sensor2
 Text GLabel 1600 3400 1    50   Input ~ 0
 w-Sensor1
-Text GLabel 4300 3400 0    50   Input ~ 0
+Text GLabel 4450 3100 0    50   Input ~ 0
 SP3
-Text GLabel 4300 3800 0    50   Input ~ 0
+Text GLabel 4450 3500 0    50   Input ~ 0
 SP2
-Text GLabel 4300 4200 0    50   Input ~ 0
+Text GLabel 4450 3900 0    50   Input ~ 0
 SP1
-Wire Wire Line
-	5100 5100 5100 4750
-Wire Wire Line
-	5500 5100 5100 5100
-Wire Wire Line
-	5500 5450 5500 5100
-Text GLabel 6150 5450 2    50   Input ~ 0
-GND
-Text GLabel 4550 4550 0    50   Input ~ 0
+Text GLabel 5050 3900 2    50   Input ~ 0
 w-Sensor1
-Text GLabel 4550 4900 0    50   Input ~ 0
+Text GLabel 5050 3500 2    50   Input ~ 0
 w-Sensor2
-Text GLabel 4550 5250 0    50   Input ~ 0
+Text GLabel 5050 3100 2    50   Input ~ 0
 w-Sensor3
 $Comp
 L dk_Rectangular-Connectors-Headers-Male-Pins:B2B-PH-K-S_LF__SN_ J7
@@ -514,124 +424,155 @@ $EndComp
 $Comp
 L Device:LED D3
 U 1 1 605732C1
-P 4450 4200
-F 0 "D3" V 4397 4280 50  0000 L CNN
-F 1 "LED" V 4488 4280 50  0000 L CNN
-F 2 "LED_THT:LED_D3.0mm" H 4450 4200 50  0001 C CNN
-F 3 "~" H 4450 4200 50  0001 C CNN
-	1    4450 4200
-	-1   0    0    1   
+P 4600 3900
+F 0 "D3" V 4547 3980 50  0000 L CNN
+F 1 "LED" V 4638 3980 50  0000 L CNN
+F 2 "LED_THT:LED_D3.0mm" H 4600 3900 50  0001 C CNN
+F 3 "~" H 4600 3900 50  0001 C CNN
+	1    4600 3900
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D2
 U 1 1 60599BB0
-P 4450 3800
-F 0 "D2" H 4443 3545 50  0000 C CNN
-F 1 "LED" H 4443 3636 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 4450 3800 50  0001 C CNN
-F 3 "~" H 4450 3800 50  0001 C CNN
-	1    4450 3800
-	-1   0    0    1   
+P 4600 3500
+F 0 "D2" H 4593 3245 50  0000 C CNN
+F 1 "LED" H 4593 3336 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 4600 3500 50  0001 C CNN
+F 3 "~" H 4600 3500 50  0001 C CNN
+	1    4600 3500
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D1
 U 1 1 6059A48D
-P 4450 3400
-F 0 "D1" H 4443 3145 50  0000 C CNN
-F 1 "LED" H 4443 3236 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 4450 3400 50  0001 C CNN
-F 3 "~" H 4450 3400 50  0001 C CNN
-	1    4450 3400
-	-1   0    0    1   
+P 4600 3100
+F 0 "D1" H 4593 2845 50  0000 C CNN
+F 1 "LED" H 4593 2936 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 4600 3100 50  0001 C CNN
+F 3 "~" H 4600 3100 50  0001 C CNN
+	1    4600 3100
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R6
 U 1 1 605A158E
-P 4750 3400
-F 0 "R6" V 4543 3400 50  0000 C CNN
-F 1 "R" V 4634 3400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4680 3400 50  0001 C CNN
-F 3 "~" H 4750 3400 50  0001 C CNN
-	1    4750 3400
+P 4900 3100
+F 0 "R6" V 4693 3100 50  0000 C CNN
+F 1 "R" V 4784 3100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4830 3100 50  0001 C CNN
+F 3 "~" H 4900 3100 50  0001 C CNN
+	1    4900 3100
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R7
 U 1 1 605A1BCE
-P 4750 3800
-F 0 "R7" V 4543 3800 50  0000 C CNN
-F 1 "R" V 4634 3800 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4680 3800 50  0001 C CNN
-F 3 "~" H 4750 3800 50  0001 C CNN
-	1    4750 3800
+P 4900 3500
+F 0 "R7" V 4693 3500 50  0000 C CNN
+F 1 "R" V 4784 3500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4830 3500 50  0001 C CNN
+F 3 "~" H 4900 3500 50  0001 C CNN
+	1    4900 3500
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R8
 U 1 1 605A22EA
-P 4750 4200
-F 0 "R8" V 4543 4200 50  0000 C CNN
-F 1 "R" V 4634 4200 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4680 4200 50  0001 C CNN
-F 3 "~" H 4750 4200 50  0001 C CNN
-	1    4750 4200
+P 4900 3900
+F 0 "R8" V 4693 3900 50  0000 C CNN
+F 1 "R" V 4784 3900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4830 3900 50  0001 C CNN
+F 3 "~" H 4900 3900 50  0001 C CNN
+	1    4900 3900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4900 4200 5100 4200
-Wire Wire Line
-	5100 4200 5100 4350
-Wire Wire Line
-	4900 3800 5500 3800
-Wire Wire Line
-	5500 3800 5500 4700
-Wire Wire Line
-	4900 3400 5900 3400
-Wire Wire Line
-	5900 3400 5900 5050
-Text GLabel 3500 1450 2    50   Input ~ 0
+Text GLabel 2650 1400 2    50   Input ~ 0
 5V
-Text GLabel 3500 1650 2    50   Input ~ 0
+Text GLabel 2650 1600 2    50   Input ~ 0
 GND
-Text GLabel 3500 1750 2    50   Input ~ 0
+Text GLabel 2650 1700 2    50   Input ~ 0
 GND
-$Comp
-L Device:Q_NMOS_GSD Q2
-U 1 1 60524EA6
-P 5400 4900
-F 0 "Q2" H 5604 4946 50  0000 L CNN
-F 1 "Q_NMOS_GSD" H 5604 4855 50  0000 L CNN
-F 2 "digikey-footprints:SOT-23W" H 5600 5000 50  0001 C CNN
-F 3 "~" H 5400 4900 50  0001 C CNN
-	1    5400 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NMOS_GSD Q3
-U 1 1 6052670F
-P 5800 5250
-F 0 "Q3" H 6004 5296 50  0000 L CNN
-F 1 "Q_NMOS_GSD" H 6004 5205 50  0000 L CNN
-F 2 "digikey-footprints:SOT-23W" H 6000 5350 50  0001 C CNN
-F 3 "~" H 5800 5250 50  0001 C CNN
-	1    5800 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NMOS_GSD Q1
-U 1 1 60527579
-P 5000 4550
-F 0 "Q1" H 5204 4596 50  0000 L CNN
-F 1 "Q_NMOS_GSD" H 5204 4505 50  0000 L CNN
-F 2 "digikey-footprints:SOT-23W" H 5200 4650 50  0001 C CNN
-F 3 "~" H 5000 4550 50  0001 C CNN
-	1    5000 4550
-	1    0    0    -1  
-$EndComp
+Text GLabel 1500 3400 1    50   Input ~ 0
+5V
+Text GLabel 2200 3400 1    50   Input ~ 0
+5V
+Text GLabel 2900 3400 1    50   Input ~ 0
+5V
 Wire Wire Line
-	5500 5450 5900 5450
-Connection ~ 5900 5450
+	4200 2000 4200 2350
+$Comp
+L Device:R R1
+U 1 1 603C9B67
+P 4200 2500
+F 0 "R1" H 4270 2546 50  0000 L CNN
+F 1 "R" H 4270 2455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4130 2500 50  0001 C CNN
+F 3 "~" H 4200 2500 50  0001 C CNN
+	1    4200 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 4200 2650 3    50   Input ~ 0
+J1
 Wire Wire Line
-	5900 5450 6150 5450
-Connection ~ 5500 5100
+	3900 2100 3900 2350
+$Comp
+L Device:R R2
+U 1 1 603C902F
+P 3900 2500
+F 0 "R2" H 3970 2546 50  0000 L CNN
+F 1 "R" H 3970 2455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3830 2500 50  0001 C CNN
+F 3 "~" H 3900 2500 50  0001 C CNN
+	1    3900 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 3900 2650 3    50   Input ~ 0
+J2
+Wire Wire Line
+	3600 2350 3600 2200
+$Comp
+L Device:R R3
+U 1 1 603C850B
+P 3600 2500
+F 0 "R3" H 3670 2546 50  0000 L CNN
+F 1 "R" H 3670 2455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3530 2500 50  0001 C CNN
+F 3 "~" H 3600 2500 50  0001 C CNN
+	1    3600 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 3600 2650 3    50   Input ~ 0
+J3
+Connection ~ 4200 2000
+Wire Wire Line
+	4200 2000 4300 2000
+Connection ~ 3900 2100
+Wire Wire Line
+	3900 2100 3950 2100
+Connection ~ 3600 2200
+Wire Wire Line
+	3600 2200 3650 2200
+Wire Wire Line
+	2650 2000 4200 2000
+Wire Wire Line
+	2650 2100 3900 2100
+Wire Wire Line
+	2650 2200 3600 2200
+Wire Wire Line
+	2650 2300 3200 2300
+Connection ~ 3200 2300
+Wire Wire Line
+	3200 2300 3300 2300
+Wire Wire Line
+	3200 2600 3200 2700
+Wire Wire Line
+	3200 2700 3250 2700
+Wire Wire Line
+	2650 2400 2800 2400
+Connection ~ 2800 2400
+Wire Wire Line
+	2800 2400 2900 2400
+Wire Wire Line
+	2800 2700 2900 2700
 $EndSCHEMATC
