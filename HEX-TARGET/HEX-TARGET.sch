@@ -1,0 +1,903 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C1
+U 1 1 5D598013
+P 850 1800
+F 0 "C1" H 965 1846 50  0000 L CNN
+F 1 "0.1uf" H 965 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 888 1650 50  0001 C CNN
+F 3 "~" H 850 1800 50  0001 C CNN
+	1    850  1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:R-781.8-1.0 U5
+U 1 1 5D59C729
+P 8950 5750
+F 0 "U5" H 8950 5992 50  0000 C CNN
+F 1 "R-781.8-1.0" H 8950 5901 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 9000 5500 50  0001 L CIN
+F 3 "https://www.recom-power.com/pdf/Innoline/R-78xx-1.0.pdf" H 8950 5750 50  0001 C CNN
+	1    8950 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5D59D0F7
+P 7950 5900
+F 0 "C4" H 8065 5946 50  0000 L CNN
+F 1 "100uf" H 8065 5855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7988 5750 50  0001 C CNN
+F 3 "~" H 7950 5900 50  0001 C CNN
+	1    7950 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5D59D76B
+P 8400 5900
+F 0 "C5" H 8515 5946 50  0000 L CNN
+F 1 "0.1uf" H 8515 5855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8438 5750 50  0001 C CNN
+F 3 "~" H 8400 5900 50  0001 C CNN
+	1    8400 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5D59D95C
+P 9450 5900
+F 0 "C6" H 9565 5946 50  0000 L CNN
+F 1 "0.1uf" H 9565 5855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 9488 5750 50  0001 C CNN
+F 3 "~" H 9450 5900 50  0001 C CNN
+	1    9450 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5D59DB5F
+P 9900 5900
+F 0 "C7" H 10015 5946 50  0000 L CNN
+F 1 "100uf" H 10015 5855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 9938 5750 50  0001 C CNN
+F 3 "~" H 9900 5900 50  0001 C CNN
+	1    9900 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_Optical:TSOP585xx U1
+U 1 1 5D5A22C4
+P 1550 7250
+F 0 "U1" H 1538 7675 50  0000 C CNN
+F 1 "TSOP59540TR1" H 1538 7584 50  0000 C CNN
+F 2 "OptoDevice:Vishay_MINICAST-3Pin" H 1500 6875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/82462/tsop581.pdf" H 2200 7550 50  0001 C CNN
+	1    1550 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5D5A388C
+P 2100 7250
+F 0 "C2" H 2215 7296 50  0000 L CNN
+F 1 "10uf" H 2215 7205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2138 7100 50  0001 C CNN
+F 3 "~" H 2100 7250 50  0001 C CNN
+	1    2100 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5D5A3B8A
+P 2250 7050
+F 0 "R2" V 2045 7050 50  0000 C CNN
+F 1 "100" V 2136 7050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2290 7040 50  0001 C CNN
+F 3 "~" H 2250 7050 50  0001 C CNN
+	1    2250 7050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 7450 2100 7450
+Wire Wire Line
+	2100 7400 2100 7450
+Connection ~ 2100 7450
+Wire Wire Line
+	2100 7450 2400 7450
+Wire Wire Line
+	1950 7050 2100 7050
+Wire Wire Line
+	2100 7050 2100 7100
+Connection ~ 2100 7050
+Wire Wire Line
+	1950 7250 2400 7250
+Text GLabel 2400 7450 2    50   Input ~ 0
+GND
+Text GLabel 2400 7250 2    50   Input ~ 0
+IRsen
+Text GLabel 2400 7050 2    50   Input ~ 0
++5V
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-XH-A_LF__SN_ J1
+U 1 1 5D59E3AF
+P 850 850
+F 0 "J1" V 625 858 50  0000 C CNN
+F 1 "5V_Serial" V 716 858 50  0000 C CNN
+F 2 "digikey-footprints:PinHeader_1x4_P2.5mm_Drill1.1mm" H 1050 1050 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 1050 1150 60  0001 L CNN
+F 4 "455-2249-ND" H 1050 1250 60  0001 L CNN "Digi-Key_PN"
+F 5 "B4B-XH-A(LF)(SN)" H 1050 1350 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 1050 1450 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 1050 1550 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 1050 1650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B4B-XH-A(LF)(SN)/455-2249-ND/1651047" H 1050 1750 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 4POS 2.5MM" H 1050 1850 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 1050 1950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1050 2050 60  0001 L CNN "Status"
+	1    850  850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 6050 8400 6050
+Wire Wire Line
+	8950 6050 8400 6050
+Connection ~ 8400 6050
+Wire Wire Line
+	8950 6050 9450 6050
+Connection ~ 8950 6050
+Wire Wire Line
+	9450 6050 9900 6050
+Connection ~ 9450 6050
+Wire Wire Line
+	7950 6050 7550 6050
+Connection ~ 7950 6050
+Wire Wire Line
+	7950 5750 8400 5750
+Wire Wire Line
+	8400 5750 8650 5750
+Connection ~ 8400 5750
+Wire Wire Line
+	9250 5750 9450 5750
+Wire Wire Line
+	9900 5750 9450 5750
+Connection ~ 9450 5750
+Wire Wire Line
+	9900 5750 10000 5750
+Connection ~ 9900 5750
+Text GLabel 10000 5750 2    50   Input ~ 0
++3.3V
+$Comp
+L Device:LED_ARGB D2
+U 1 1 5D5E563C
+P 5450 4400
+F 0 "D2" V 5496 4070 50  0000 R CNN
+F 1 "LED_ARGB" V 5405 4070 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5450 4350 50  0001 C CNN
+F 3 "~" H 5450 4350 50  0001 C CNN
+	1    5450 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R8
+U 1 1 5D5E6BCB
+P 5250 4750
+F 0 "R8" H 5318 4796 50  0000 L CNN
+F 1 "3.3k" H 5318 4705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5290 4740 50  0001 C CNN
+F 3 "~" H 5250 4750 50  0001 C CNN
+	1    5250 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R9
+U 1 1 5D5E73D4
+P 5450 4750
+F 0 "R9" H 5518 4796 50  0000 L CNN
+F 1 "3.3k" H 5518 4705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5490 4740 50  0001 C CNN
+F 3 "~" H 5450 4750 50  0001 C CNN
+	1    5450 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R10
+U 1 1 5D5E7B9E
+P 5650 4750
+F 0 "R10" H 5718 4796 50  0000 L CNN
+F 1 "3.3k" H 5718 4705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5690 4740 50  0001 C CNN
+F 3 "~" H 5650 4750 50  0001 C CNN
+	1    5650 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4900 5450 5200
+Wire Wire Line
+	5650 4900 5650 5500
+Wire Wire Line
+	5250 5300 5250 5600
+Wire Wire Line
+	5250 5600 5450 5600
+Wire Wire Line
+	5450 5600 5450 5900
+Text GLabel 5800 5900 2    50   Input ~ 0
+GND
+Wire Wire Line
+	5450 4200 5450 4150
+Wire Wire Line
+	5450 4150 5600 4150
+Text GLabel 5600 4150 2    50   Input ~ 0
++5V
+$Comp
+L Switch:SW_DIP_x04 SW2
+U 1 1 5D60F003
+P 6000 7050
+F 0 "SW2" H 6000 7517 50  0000 C CNN
+F 1 "SW_DIP_x04" H 6000 7426 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx04_Slide_6.7x11.72mm_W7.62mm_P2.54mm_LowProfile" H 6000 7050 50  0001 C CNN
+F 3 "~" H 6000 7050 50  0001 C CNN
+	1    6000 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Network04_US RN1
+U 1 1 5D6104F1
+P 5450 6550
+F 0 "RN1" H 5638 6596 50  0000 L CNN
+F 1 "R_Network04_US" H 5638 6505 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP5" V 5725 6550 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5450 6550 50  0001 C CNN
+	1    5450 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 6850 5250 6850
+Wire Wire Line
+	5700 6950 5350 6950
+Wire Wire Line
+	5700 7050 5450 7050
+Wire Wire Line
+	5700 7150 5550 7150
+Wire Wire Line
+	5250 6750 5250 6850
+Connection ~ 5250 6850
+Wire Wire Line
+	5250 6850 5000 6850
+Wire Wire Line
+	5350 6750 5350 6950
+Connection ~ 5350 6950
+Wire Wire Line
+	5350 6950 5000 6950
+Wire Wire Line
+	5450 6750 5450 7050
+Connection ~ 5450 7050
+Wire Wire Line
+	5450 7050 5000 7050
+Wire Wire Line
+	5550 6750 5550 7150
+Connection ~ 5550 7150
+Wire Wire Line
+	5550 7150 5000 7150
+Text GLabel 6150 7350 0    50   Input ~ 0
+GND
+Wire Wire Line
+	5250 6350 5250 6300
+Wire Wire Line
+	5250 6300 5350 6300
+Text GLabel 5350 6300 2    50   Input ~ 0
++5V
+Text GLabel 850  1950 3    50   Input ~ 0
+GND
+Text GLabel 5000 6850 0    50   Input ~ 0
+ID_SW1
+Text GLabel 5000 6950 0    50   Input ~ 0
+ID_SW2
+Text GLabel 5000 7050 0    50   Input ~ 0
+ID_SW3
+Text GLabel 5000 7150 0    50   Input ~ 0
+ID_SW4
+Text GLabel 4950 5100 0    50   Input ~ 0
+LED_R
+Text GLabel 5150 5400 0    50   Input ~ 0
+LED_G
+Text GLabel 5350 5700 0    50   Input ~ 0
+LED_B
+Text GLabel 5850 2400 2    50   Input ~ 0
+TWE_TX
+Text GLabel 5150 3000 2    50   Input ~ 0
+GND
+Text GLabel 7550 5750 0    50   Input ~ 0
++5V
+Text GLabel 7550 6050 0    50   Input ~ 0
+GND
+Text GLabel 3500 5750 2    50   Input ~ 0
+TWE_TX
+Text GLabel 3500 5250 2    50   Input ~ 0
+TWE_RX
+Text GLabel 3000 5750 0    50   Input ~ 0
+RXOUT
+Text GLabel 3000 5250 0    50   Input ~ 0
+TXOUT
+Text GLabel 3100 5950 0    50   Input ~ 0
+RX_J
+Text GLabel 3100 5400 0    50   Input ~ 0
+TX_J
+Wire Wire Line
+	3250 5950 3100 5950
+Wire Wire Line
+	3250 5850 3250 5950
+Wire Wire Line
+	3250 5400 3100 5400
+Wire Wire Line
+	3250 5350 3250 5400
+Wire Wire Line
+	2800 4850 3450 4850
+Text GLabel 3450 4850 2    50   Input ~ 0
+RX_J
+Text GLabel 3450 4450 2    50   Input ~ 0
+TX_J
+$Comp
+L Device:R_US R6
+U 1 1 5D5A1913
+P 3300 4450
+F 0 "R6" H 3368 4496 50  0000 L CNN
+F 1 "1k" H 3368 4405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3340 4440 50  0001 C CNN
+F 3 "~" H 3300 4450 50  0001 C CNN
+	1    3300 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Jumper_NC_Dual JP2
+U 1 1 5D7DDE4D
+P 3250 5750
+F 0 "JP2" H 3250 5989 50  0000 C CNN
+F 1 "Jumper" H 3250 5898 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3250 5750 50  0001 C CNN
+F 3 "~" H 3250 5750 50  0001 C CNN
+	1    3250 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Dual JP1
+U 1 1 5D7D11B0
+P 3250 5250
+F 0 "JP1" H 3250 5489 50  0000 C CNN
+F 1 "Jumper" H 3250 5398 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3250 5250 50  0001 C CNN
+F 3 "~" H 3250 5250 50  0001 C CNN
+	1    3250 5250
+	1    0    0    -1  
+$EndComp
+Text GLabel 5150 1200 2    50   Input ~ 0
++3.3V
+Wire Wire Line
+	2800 3350 2800 4850
+Wire Wire Line
+	2950 3450 2950 4450
+Wire Wire Line
+	2800 3350 3200 3350
+Connection ~ 2800 3350
+Wire Wire Line
+	2950 3450 2300 3450
+Connection ~ 2950 3450
+Wire Wire Line
+	2950 4450 3150 4450
+Wire Wire Line
+	3300 4100 3500 4100
+Connection ~ 3300 4100
+Wire Wire Line
+	3300 4000 3300 4100
+Wire Wire Line
+	3500 4000 3300 4000
+Wire Wire Line
+	3200 4100 3300 4100
+Text GLabel 3200 4100 0    50   Input ~ 0
+GND
+Text GLabel 3200 3900 0    50   Input ~ 0
++5V
+Wire Wire Line
+	3500 3900 3200 3900
+Wire Wire Line
+	3200 3800 3500 3800
+Wire Wire Line
+	3200 3350 3200 3800
+Wire Wire Line
+	2300 3350 2800 3350
+Wire Wire Line
+	3250 3450 2950 3450
+Wire Wire Line
+	3250 3700 3250 3450
+Wire Wire Line
+	3500 3700 3250 3700
+Text GLabel 3900 3300 0    50   Input ~ 0
+GND
+Wire Wire Line
+	4000 3300 3900 3300
+Wire Wire Line
+	4000 3150 4000 3300
+Wire Wire Line
+	3400 3300 3500 3300
+Wire Wire Line
+	3400 3150 3400 3300
+Connection ~ 2800 3150
+Connection ~ 3400 3150
+Wire Wire Line
+	3400 3150 2800 3150
+Wire Wire Line
+	3400 3150 3600 3150
+Wire Wire Line
+	3400 2800 3400 2850
+Wire Wire Line
+	3550 2800 3400 2800
+Text GLabel 3550 2800 2    50   Input ~ 0
++5V
+$Comp
+L Device:C C3
+U 1 1 5D708398
+P 3500 3450
+F 0 "C3" H 3615 3496 50  0000 L CNN
+F 1 "0.1uf" H 3615 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3538 3300 50  0001 C CNN
+F 3 "~" H 3500 3450 50  0001 C CNN
+	1    3500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R7
+U 1 1 5D707D73
+P 3400 3000
+F 0 "R7" H 3468 3046 50  0000 L CNN
+F 1 "10k" H 3468 2955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3440 2990 50  0001 C CNN
+F 3 "~" H 3400 3000 50  0001 C CNN
+	1    3400 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 5850 2300 2    50   Input ~ 0
+TWE_RX
+Text GLabel 1150 4350 0    50   Input ~ 0
+GND
+Wire Wire Line
+	1700 4350 1150 4350
+Text GLabel 2300 4050 2    50   Input ~ 0
+IRsen
+Text GLabel 2300 3950 2    50   Input ~ 0
+LED_B
+Text GLabel 2300 3850 2    50   Input ~ 0
+LED_G
+Text GLabel 2300 3750 2    50   Input ~ 0
+LED_R
+Text GLabel 2300 2850 2    50   Input ~ 0
+ID_SW4
+Text GLabel 2300 2750 2    50   Input ~ 0
+ID_SW3
+Text GLabel 2300 2650 2    50   Input ~ 0
+ID_SW2
+Text GLabel 2300 2550 2    50   Input ~ 0
+ID_SW1
+Wire Wire Line
+	850  1650 1100 1650
+Text GLabel 3550 1450 2    50   Input ~ 0
+GND
+Wire Wire Line
+	2950 1600 2950 1450
+Wire Wire Line
+	2800 1600 2950 1600
+Wire Wire Line
+	2800 1750 2800 1600
+Wire Wire Line
+	2300 1750 2800 1750
+$Comp
+L Device:R_US R5
+U 1 1 5D67130A
+P 3100 1450
+F 0 "R5" V 2895 1450 50  0000 C CNN
+F 1 "51" V 2986 1450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3140 1440 50  0001 C CNN
+F 3 "~" H 3100 1450 50  0001 C CNN
+	1    3100 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5D670524
+P 3400 1450
+F 0 "D1" H 3393 1195 50  0000 C CNN
+F 1 "IR_LED" H 3393 1286 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 3400 1450 50  0001 C CNN
+F 3 "~" H 3400 1450 50  0001 C CNN
+	1    3400 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 1850 3250 1850
+Wire Wire Line
+	2950 2350 2950 1850
+Wire Wire Line
+	2300 2350 2950 2350
+Wire Wire Line
+	2700 1550 3250 1550
+Wire Wire Line
+	2700 2250 2700 1550
+Wire Wire Line
+	2300 2250 2700 2250
+Text GLabel 3550 2250 1    50   Input ~ 0
++5V
+Text GLabel 3550 2600 2    50   Input ~ 0
+GND
+Wire Wire Line
+	3550 2400 3550 2250
+Wire Wire Line
+	3700 2500 3550 2500
+Wire Wire Line
+	3700 1950 3700 2500
+Wire Wire Line
+	2300 1950 3700 1950
+Wire Wire Line
+	2800 2600 3050 2600
+Wire Wire Line
+	2800 3150 2800 2600
+Wire Wire Line
+	2300 3150 2800 3150
+Wire Wire Line
+	2800 2500 3050 2500
+Wire Wire Line
+	2800 2150 2800 2500
+Wire Wire Line
+	2300 2150 2800 2150
+Wire Wire Line
+	2850 2400 3050 2400
+Wire Wire Line
+	2850 2050 2850 2400
+Wire Wire Line
+	2300 2050 2850 2050
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5D64DB89
+P 3050 2950
+F 0 "J2" H 3130 2942 50  0000 L CNN
+F 1 "i2c" H 3130 2851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3050 2950 50  0001 C CNN
+F 3 "~" H 3050 2950 50  0001 C CNN
+	1    3050 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3050 2850 3050
+Connection ~ 2650 3050
+Wire Wire Line
+	2650 1500 2650 3050
+Wire Wire Line
+	2400 2950 2850 2950
+Connection ~ 2400 2950
+Wire Wire Line
+	2400 1500 2400 2950
+Wire Wire Line
+	2300 3050 2650 3050
+Wire Wire Line
+	2300 2950 2400 2950
+Text GLabel 2000 1100 2    50   Input ~ 0
++5V
+Connection ~ 1700 1200
+Wire Wire Line
+	1700 1100 2000 1100
+Wire Wire Line
+	1700 1200 1700 1100
+Connection ~ 1800 1200
+Wire Wire Line
+	1700 1200 1800 1200
+Wire Wire Line
+	1700 1350 1700 1200
+Wire Wire Line
+	2400 1200 2650 1200
+Connection ~ 2400 1200
+Wire Wire Line
+	1800 1200 2400 1200
+Wire Wire Line
+	1800 1350 1800 1200
+$Comp
+L Device:R_US R3
+U 1 1 5D63AA14
+P 2400 1350
+F 0 "R3" H 2468 1396 50  0000 L CNN
+F 1 "10k" H 2468 1305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2440 1340 50  0001 C CNN
+F 3 "~" H 2400 1350 50  0001 C CNN
+	1    2400 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 5D63984B
+P 2650 1350
+F 0 "R4" H 2718 1396 50  0000 L CNN
+F 1 "10k" H 2718 1305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2690 1340 50  0001 C CNN
+F 3 "~" H 2650 1350 50  0001 C CNN
+	1    2650 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J3
+U 1 1 5D63917D
+P 3250 2500
+F 0 "J3" H 3300 2817 50  0000 C CNN
+F 1 "ICSP" H 3300 2726 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 3250 2500 50  0001 C CNN
+F 3 "~" H 3250 2500 50  0001 C CNN
+	1    3250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J4
+U 1 1 5D6287C6
+P 3700 3800
+F 0 "J4" H 3780 3792 50  0000 L CNN
+F 1 "PROG" H 3780 3701 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3700 3800 50  0001 C CNN
+F 3 "~" H 3700 3800 50  0001 C CNN
+	1    3700 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 950  850  2    50   Input ~ 0
+GND
+Text GLabel 950  950  2    50   Input ~ 0
++5V
+Text GLabel 950  1050 2    50   Input ~ 0
+TXOUT
+Text GLabel 950  1150 2    50   Input ~ 0
+RXOUT
+Wire Wire Line
+	6300 6850 6300 6950
+Wire Wire Line
+	6300 7350 6150 7350
+Connection ~ 6300 6950
+Wire Wire Line
+	6300 6950 6300 7050
+Connection ~ 6300 7050
+Wire Wire Line
+	6300 7050 6300 7150
+Connection ~ 6300 7150
+Wire Wire Line
+	6300 7150 6300 7350
+$Comp
+L Device:Crystal Y1
+U 1 1 5D75EE8D
+P 3250 1700
+F 0 "Y1" V 3204 1831 50  0000 L CNN
+F 1 "Crystal" V 3295 1831 50  0000 L CNN
+F 2 "Crystal:Crystal_HC49-4H_Vertical" H 3250 1700 50  0001 C CNN
+F 3 "~" H 3250 1700 50  0001 C CNN
+	1    3250 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse_Small F1
+U 1 1 5D59F8D8
+P 7650 5750
+F 0 "F1" H 7650 5935 50  0000 C CNN
+F 1 "Fuse_Small" H 7650 5844 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7650 5750 50  0001 C CNN
+F 3 "~" H 7650 5750 50  0001 C CNN
+	1    7650 5750
+	1    0    0    -1  
+$EndComp
+Connection ~ 7950 5750
+$Comp
+L Device:Jumper JP4
+U 1 1 5D72B739
+P 7500 4350
+F 0 "JP4" H 7500 4614 50  0000 C CNN
+F 1 "Mode_Switch" H 7500 4523 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 7500 4350 50  0001 C CNN
+F 3 "~" H 7500 4350 50  0001 C CNN
+	1    7500 4350
+	1    0    0    -1  
+$EndComp
+Text GLabel 2300 1650 2    50   Input ~ 0
+MODE_SW
+Text GLabel 7200 4350 0    50   Input ~ 0
+MODE_SW
+Text GLabel 7800 4350 2    50   Input ~ 0
+GND
+Wire Wire Line
+	7750 5750 7950 5750
+$Comp
+L Device:Q_NMOS_GSD Q1
+U 1 1 604D134C
+P 5150 5100
+F 0 "Q1" H 5354 5146 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 5354 5055 50  0000 L CNN
+F 2 "digikey-footprints:SOT-23W" H 5350 5200 50  0001 C CNN
+F 3 "~" H 5150 5100 50  0001 C CNN
+	1    5150 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q2
+U 1 1 604F069A
+P 5350 5400
+F 0 "Q2" H 5554 5446 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 5554 5355 50  0000 L CNN
+F 2 "digikey-footprints:SOT-23W" H 5550 5500 50  0001 C CNN
+F 3 "~" H 5350 5400 50  0001 C CNN
+	1    5350 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q3
+U 1 1 604F13AB
+P 5550 5700
+F 0 "Q3" H 5754 5746 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 5754 5655 50  0000 L CNN
+F 2 "digikey-footprints:SOT-23W" H 5750 5800 50  0001 C CNN
+F 3 "~" H 5550 5700 50  0001 C CNN
+	1    5550 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 5900 5650 5900
+Connection ~ 5450 5600
+Connection ~ 5650 5900
+Wire Wire Line
+	5650 5900 5800 5900
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-PU U?
+U 1 1 61FA60F9
+P 1700 2850
+F 0 "U?" H 1056 2896 50  0000 R CNN
+F 1 "ATmega328P-PU" H 1056 2805 50  0000 R CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 1700 2850 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 1700 2850 50  0001 C CNN
+	1    1700 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPST_x2 SW?
+U 1 1 61FBD1E4
+P 3800 3150
+F 0 "SW?" H 3800 3385 50  0000 C CNN
+F 1 "SW_DPST_x2" H 3800 3294 50  0000 C CNN
+F 2 "" H 3800 3150 50  0001 C CNN
+F 3 "~" H 3800 3150 50  0001 C CNN
+	1    3800 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF_ZigBee:TWE-L-WX U?
+U 1 1 61FFB37D
+P 5150 2100
+F 0 "U?" H 5150 3181 50  0000 C CNN
+F 1 "TWE-L-WX" H 5150 3090 50  0000 C CNN
+F 2 "RF_Module:MonoWireless_TWE-L-WX" H 5150 1000 50  0001 C CNN
+F 3 "https://www.mono-wireless.com/jp/products/TWE-LITE/MW-PDS-TWELITE-JP.pdf" H 5900 1100 50  0001 C CNN
+	1    5150 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4450 1800 0    50   Input ~ 0
+TWE_RST
+Text GLabel 4450 2100 0    50   Input ~ 0
+TWE_SET
+Text GLabel 5850 2000 2    50   Input ~ 0
+TWE_PRG
+$Comp
+L HotSprings:MCP2515_20p U?
+U 1 1 620C6C59
+P 8450 1800
+F 0 "U?" H 8450 2475 50  0000 C CNN
+F 1 "MCP2515_20p" H 8450 2384 50  0000 C CNN
+F 2 "hotsprings-footprints:MCP2515_SMD" H 8450 2350 50  0001 C CNN
+F 3 "" H 8450 2350 50  0001 C CNN
+	1    8450 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L HotSprings:MCP2551 U?
+U 1 1 620C85E4
+P 9800 1700
+F 0 "U?" H 9800 2075 50  0000 C CNN
+F 1 "MCP2551" H 9800 1984 50  0000 C CNN
+F 2 "" H 9800 1950 50  0001 C CNN
+F 3 "" H 9800 1950 50  0001 C CNN
+	1    9800 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 620EBE37
+P 10100 1450
+F 0 "R?" H 10168 1496 50  0000 L CNN
+F 1 "33k" H 10168 1405 50  0000 L CNN
+F 2 "" H 10100 1450 50  0001 C CNN
+F 3 "~" H 10100 1450 50  0001 C CNN
+	1    10100 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 620EC687
+P 10100 1350
+F 0 "#PWR?" H 10100 1100 50  0001 C CNN
+F 1 "GND" H 10105 1177 50  0000 C CNN
+F 2 "" H 10100 1350 50  0001 C CNN
+F 3 "" H 10100 1350 50  0001 C CNN
+	1    10100 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B2B-PH-SM4-TB_LF__SN_ J?
+U 1 1 620F2559
+P 10800 1500
+F 0 "J?" V 10891 1372 50  0000 R CNN
+F 1 "can_T" V 10800 1372 50  0000 R CNN
+F 2 "digikey-footprints:PinHeader_1x2_P2mm" H 11000 1700 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 11000 1800 60  0001 L CNN
+F 4 "455-1734-1-ND" H 11000 1900 60  0001 L CNN "Digi-Key_PN"
+F 5 "B2B-PH-SM4-TB(LF)(SN)" H 11000 2000 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 11000 2100 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 11000 2200 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 11000 2300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B2B-PH-SM4-TB(LF)(SN)/455-1734-1-ND/926831" H 11000 2400 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER SMD 2POS 2MM" H 11000 2500 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 11000 2600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 11000 2700 60  0001 L CNN "Status"
+	1    10800 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-PH-K-S_LF__SN_ J?
+U 1 1 620F31BA
+P 10800 2000
+F 0 "J?" V 10991 1872 50  0000 R CNN
+F 1 "can1" V 10900 1872 50  0000 R CNN
+F 2 "digikey-footprints:PinHeader_1x4_P2mm_Drill1mm" H 11000 2200 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 11000 2300 60  0001 L CNN
+F 4 "455-1706-ND" H 11000 2400 60  0001 L CNN "Digi-Key_PN"
+F 5 "B4B-PH-K-S(LF)(SN)" H 11000 2500 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 11000 2600 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 11000 2700 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 11000 2800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B4B-PH-K-S(LF)(SN)/455-1706-ND/926613" H 11000 2900 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 4POS 2MM" H 11000 3000 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 11000 3100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 11000 3200 60  0001 L CNN "Status"
+	1    10800 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:B4B-PH-K-S_LF__SN_ J?
+U 1 1 620F400D
+P 10800 2450
+F 0 "J?" V 10991 2322 50  0000 R CNN
+F 1 "can2" V 10900 2322 50  0000 R CNN
+F 2 "digikey-footprints:PinHeader_1x4_P2mm_Drill1mm" H 11000 2650 60  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 11000 2750 60  0001 L CNN
+F 4 "455-1706-ND" H 11000 2850 60  0001 L CNN "Digi-Key_PN"
+F 5 "B4B-PH-K-S(LF)(SN)" H 11000 2950 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 11000 3050 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 11000 3150 60  0001 L CNN "Family"
+F 8 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 11000 3250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/jst-sales-america-inc/B4B-PH-K-S(LF)(SN)/455-1706-ND/926613" H 11000 3350 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 4POS 2MM" H 11000 3450 60  0001 L CNN "Description"
+F 11 "JST Sales America Inc." H 11000 3550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 11000 3650 60  0001 L CNN "Status"
+	1    10800 2450
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
