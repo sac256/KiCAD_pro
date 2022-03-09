@@ -1,0 +1,269 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 6226D369
+P 8350 1650
+F 0 "J?" H 8430 1642 50  0000 L CNN
+F 1 "Conn_01x06" H 8430 1551 50  0000 L CNN
+F 2 "" H 8350 1650 50  0001 C CNN
+F 3 "~" H 8350 1650 50  0001 C CNN
+	1    8350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 6226DFBA
+P 8150 2450
+F 0 "J?" H 8230 2442 50  0000 L CNN
+F 1 "Conn_01x02" H 8230 2351 50  0000 L CNN
+F 2 "" H 8150 2450 50  0001 C CNN
+F 3 "~" H 8150 2450 50  0001 C CNN
+	1    8150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 6226E157
+P 8150 2850
+F 0 "J?" H 8230 2842 50  0000 L CNN
+F 1 "Conn_01x02" H 8230 2751 50  0000 L CNN
+F 2 "" H 8150 2850 50  0001 C CNN
+F 3 "~" H 8150 2850 50  0001 C CNN
+	1    8150 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 6226E7D3
+P 8200 3250
+F 0 "J?" H 8280 3242 50  0000 L CNN
+F 1 "Conn_01x02" H 8280 3151 50  0000 L CNN
+F 2 "" H 8200 3250 50  0001 C CNN
+F 3 "~" H 8200 3250 50  0001 C CNN
+	1    8200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 6226E9D8
+P 8200 3600
+F 0 "J?" H 8280 3592 50  0000 L CNN
+F 1 "Conn_01x02" H 8280 3501 50  0000 L CNN
+F 2 "" H 8200 3600 50  0001 C CNN
+F 3 "~" H 8200 3600 50  0001 C CNN
+	1    8200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 6226EF72
+P 8200 3900
+F 0 "J?" H 8280 3892 50  0000 L CNN
+F 1 "Conn_01x02" H 8280 3801 50  0000 L CNN
+F 2 "" H 8200 3900 50  0001 C CNN
+F 3 "~" H 8200 3900 50  0001 C CNN
+	1    8200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J?
+U 1 1 6226F3C9
+P 8200 4450
+F 0 "J?" H 8280 4492 50  0000 L CNN
+F 1 "Conn_01x05" H 8280 4401 50  0000 L CNN
+F 2 "" H 8200 4450 50  0001 C CNN
+F 3 "~" H 8200 4450 50  0001 C CNN
+	1    8200 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J?
+U 1 1 6227060D
+P 8150 5850
+F 0 "J?" H 8200 6067 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 8200 5976 50  0000 C CNN
+F 2 "" H 8150 5850 50  0001 C CNN
+F 3 "~" H 8150 5850 50  0001 C CNN
+	1    8150 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 62271411
+P 8200 5050
+F 0 "J?" H 8280 5042 50  0000 L CNN
+F 1 "Conn_01x06" H 8280 4951 50  0000 L CNN
+F 2 "" H 8200 5050 50  0001 C CNN
+F 3 "~" H 8200 5050 50  0001 C CNN
+	1    8200 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62275665
+P 5500 2350
+F 0 "R?" H 5570 2396 50  0000 L CNN
+F 1 "R" H 5570 2305 50  0000 L CNN
+F 2 "" V 5430 2350 50  0001 C CNN
+F 3 "~" H 5500 2350 50  0001 C CNN
+	1    5500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62275CCB
+P 5250 2350
+F 0 "R?" H 5320 2396 50  0000 L CNN
+F 1 "R" H 5320 2305 50  0000 L CNN
+F 2 "" V 5180 2350 50  0001 C CNN
+F 3 "~" H 5250 2350 50  0001 C CNN
+	1    5250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62277DC2
+P 4950 2350
+F 0 "R?" H 5020 2396 50  0000 L CNN
+F 1 "R" H 5020 2305 50  0000 L CNN
+F 2 "" V 4880 2350 50  0001 C CNN
+F 3 "~" H 4950 2350 50  0001 C CNN
+	1    4950 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62277EE0
+P 4700 2350
+F 0 "R?" H 4770 2396 50  0000 L CNN
+F 1 "R" H 4770 2305 50  0000 L CNN
+F 2 "" V 4630 2350 50  0001 C CNN
+F 3 "~" H 4700 2350 50  0001 C CNN
+	1    4700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6227AEEA
+P 4450 2350
+F 0 "R?" H 4520 2396 50  0000 L CNN
+F 1 "R" H 4520 2305 50  0000 L CNN
+F 2 "" V 4380 2350 50  0001 C CNN
+F 3 "~" H 4450 2350 50  0001 C CNN
+	1    4450 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6227B028
+P 4200 2350
+F 0 "R?" H 4270 2396 50  0000 L CNN
+F 1 "R" H 4270 2305 50  0000 L CNN
+F 2 "" V 4130 2350 50  0001 C CNN
+F 3 "~" H 4200 2350 50  0001 C CNN
+	1    4200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6227B032
+P 3900 2350
+F 0 "R?" H 3970 2396 50  0000 L CNN
+F 1 "R" H 3970 2305 50  0000 L CNN
+F 2 "" V 3830 2350 50  0001 C CNN
+F 3 "~" H 3900 2350 50  0001 C CNN
+	1    3900 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6227B03C
+P 3650 2350
+F 0 "R?" H 3720 2396 50  0000 L CNN
+F 1 "R" H 3720 2305 50  0000 L CNN
+F 2 "" V 3580 2350 50  0001 C CNN
+F 3 "~" H 3650 2350 50  0001 C CNN
+	1    3650 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6227FDEB
+P 4250 3200
+F 0 "C?" H 4365 3246 50  0000 L CNN
+F 1 "C" H 4365 3155 50  0000 L CNN
+F 2 "" H 4288 3050 50  0001 C CNN
+F 3 "~" H 4250 3200 50  0001 C CNN
+	1    4250 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62280D44
+P 4600 3200
+F 0 "C?" H 4715 3246 50  0000 L CNN
+F 1 "C" H 4715 3155 50  0000 L CNN
+F 2 "" H 4638 3050 50  0001 C CNN
+F 3 "~" H 4600 3200 50  0001 C CNN
+	1    4600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62283AD2
+P 5000 3200
+F 0 "C?" H 5115 3246 50  0000 L CNN
+F 1 "C" H 5115 3155 50  0000 L CNN
+F 2 "" H 5038 3050 50  0001 C CNN
+F 3 "~" H 5000 3200 50  0001 C CNN
+	1    5000 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62283C76
+P 5350 3200
+F 0 "C?" H 5465 3246 50  0000 L CNN
+F 1 "C" H 5465 3155 50  0000 L CNN
+F 2 "" H 5388 3050 50  0001 C CNN
+F 3 "~" H 5350 3200 50  0001 C CNN
+	1    5350 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 62286613
+P 4200 4250
+F 0 "SW?" H 4200 4535 50  0000 C CNN
+F 1 "SW_Push" H 4200 4444 50  0000 C CNN
+F 2 "" H 4200 4450 50  0001 C CNN
+F 3 "~" H 4200 4450 50  0001 C CNN
+	1    4200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 622872D7
+P 4750 4250
+F 0 "SW?" H 4750 4535 50  0000 C CNN
+F 1 "SW_Push" H 4750 4444 50  0000 C CNN
+F 2 "" H 4750 4450 50  0001 C CNN
+F 3 "~" H 4750 4450 50  0001 C CNN
+	1    4750 4250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
